@@ -1,0 +1,180 @@
+@import url('fonts.css');
+
+button{
+	color:white !important;
+}
+
+ul{
+	list-style: none;
+}
+
+#top{
+	position:relative;
+	min-height: 450px;
+	background-image: url('../../img/bg-top.png');
+	background-size:cover;
+}
+
+#top img{
+	top:0;
+	position:absolute;
+	max-width: 700px;
+	margin-top:-50px;
+	margin-left:;
+}
+
+#top .text{
+	margin-top:100px;
+	margin-right: 70px;
+}
+
+#top p{
+	position:relative;
+	font-family: 'Vista';
+	color:white;
+	font-size: 40px;
+	top:25px;
+}
+
+#top span{
+	display: block;
+	color:white;
+	position:relative;
+	font-size:35px;
+	font-family: 'Vista';
+	transform: rotate(-2deg) !important;
+}
+
+
+.background-red{
+	background-color: #EE1D25;
+}
+
+.background-white{
+	background-color: #F2F2F2;
+}
+
+.background-transparent{
+	background: rgba(255,255,255,.3);
+}
+
+
+#slider img{
+	display: block;
+	margin:auto;
+	max-width: 400px;
+}
+
+#slider p{
+	font-size:45px;
+	font-family: 'Vista';
+	transform: rotate(-2deg) !important;
+}
+
+#banner{
+	position:relative;
+	min-height: 300px;
+}
+
+#banner img{
+	position:absolute;
+	display:block;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	max-width: 60%;
+	z-index: 2;
+}
+
+#banner p{
+	position:relative;
+	font-family: 'Smith';
+	font-size:75px;
+	color:white;
+	margin-top:90px;
+	z-index: 15;
+}
+
+#info h4{
+	font-family: 'Smith';
+	font-size:45px;
+	font-weight: 576;
+	padding-left:50px;
+}
+
+#info p{
+	font-family: 'Vista';
+	display: block;
+	width:80%;
+	margin:auto;
+}
+
+#info #second{
+	position:relative;
+	min-height: 300px;
+	margin-top:75px;
+}
+
+#info #second img{
+	display: block;
+	width:80%;
+	position:absolute;
+	max-width: 500px;
+	margin:auto;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+#info #second p{
+	position:relative;
+	display: block;
+	font-size:45px;
+	font-family: 'Vista';
+	top:55px;
+	font-weight: bold;
+	transform: rotate(-2deg);
+}
+
+#info #second p span{
+	font-family: 'Smith';
+	font-weight: 100;
+}
+
+#contact p{
+	font-size:25px;
+}
+
+#contact ul{
+	position:relative;
+	width: 80%;
+	max-width: 400px;
+	margin:auto;
+}
+
+#contact ul li{
+	margin:auto;
+}
+
+#contact ul span{
+	font-size:55px;
+	color:white;
+	text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+
+#contact .form-control{
+	border-radius: 45px;
+	box-shadow: 2px 5px 5px rgba(0,0,0,.2);
+	margin-top:10px;
+	margin-bottom:10px;
+	color:black;
+	font-family: 'Vista';
+	padding: 20px 30px;
+}
+
+#contact textarea{
+	height:200px;
+}
