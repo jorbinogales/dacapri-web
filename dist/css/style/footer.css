@@ -42,6 +42,11 @@ ul{
 	background: #ffffff;
 }
 
+#contact{
+	display: block;
+	padding-top:50px !important;
+}
+
 #contact p{
 	font-size:35px;
 	font-family: 'VistaBlackita';
@@ -49,9 +54,9 @@ ul{
 
 #contact ul{
 	position:relative;
-	width: 80%;
-	max-width: 400px;
+	width: 100%;
 	margin:auto;
+	max-width: 400px;
 }
 
 #contact ul li{
