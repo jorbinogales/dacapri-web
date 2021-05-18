@@ -89,6 +89,12 @@ ul{
 	padding: 20px 30px;
 }
 
+#contact input[type="submit"]{
+	border-radius:35px;
+	margin-top:15px;
+	box-shadow: 5px 5px 5px 0px rgba(100,100,100,.5);
+}
+
 #contact textarea{
 	height:200px;
 }

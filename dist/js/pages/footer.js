@@ -10,3 +10,18 @@ $('.star').on('mouseenter', function(event){
 		console.log($('#star-'+i));
 	}
 })
+
+$('#formContact').submit(function(e){
+	e.preventDefault();
+	$.ajax({
+		url: 'http://api.dacapryfactory.net/api/contact/create',
+		type: 'post',
+		dataType: 'json',
+		data: $(this).serialize(),
+		success: function(resp){
+			console.log(resp);
+		}
+	}).fail(function(resp){
+		console.log(resp);
+	})
+})
