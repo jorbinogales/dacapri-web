@@ -1,6 +1,32 @@
 <?php
 function footerPHP($ruta){
 	?>
+	<section  class="p-4 background-white" id="contact">
+		<div class="container">
+			<div class="container-fluid">
+				<p class="text-center">give us your impression</p>
+			</div>
+			<ul class="d-flex">
+				<li><span class="icon-star-1"></span></li>
+				<li><span class="icon-star-1"></span></li>
+				<li><span class="icon-star-1"></span></li>
+				<li><span class="icon-star-1"></span></li>
+				<li><span class="icon-star-1"></span></li>
+			</ul>
+			<form method="post">
+				<div class="form-group">
+					<input type="text" class="form-control" name="" placeholder="NAME:">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" name="" placeholder="EMAIL:">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" placeholder="MESSAGE:"></textarea>
+				</div>
+			</form>
+		</div>
+	</section>
+	
 	<footer class="background-white">
 		<div class="container">
 			<div class="container-fluid">

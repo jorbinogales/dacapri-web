@@ -1,12 +1,3 @@
-@import url('fonts.css');
-
-button{
-	color:white !important;
-}
-
-ul{
-	list-style: none;
-}
 
 #top{
 	position:relative;
@@ -45,18 +36,6 @@ ul{
 	transform: rotate(-2deg) !important;
 }
 
-
-.background-red{
-	background-color: #EE1D25;
-}
-
-.background-white{
-	background-color: #F2F2F2;
-}
-
-.background-transparent{
-	background: rgba(255,255,255,.3);
-}
 
 
 #slider img{
@@ -142,39 +121,4 @@ ul{
 #info #second p span{
 	font-family: 'Smith';
 	font-weight: 100;
-}
-
-#contact p{
-	font-size:25px;
-}
-
-#contact ul{
-	position:relative;
-	width: 80%;
-	max-width: 400px;
-	margin:auto;
-}
-
-#contact ul li{
-	margin:auto;
-}
-
-#contact ul span{
-	font-size:55px;
-	color:white;
-	text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-}
-
-#contact .form-control{
-	border-radius: 45px;
-	box-shadow: 2px 5px 5px rgba(0,0,0,.2);
-	margin-top:10px;
-	margin-bottom:10px;
-	color:black;
-	font-family: 'Vista';
-	padding: 20px 30px;
-}
-
-#contact textarea{
-	height:200px;
 }

@@ -1,0 +1,75 @@
+#top{
+	position:relative;
+	min-height: 450px;
+	background-size:cover;
+}
+
+
+#top .food{
+	top:0;
+	position:absolute;
+	max-width: 700px;
+	margin-top:-50px;
+}
+
+#top .text{
+	margin-top:100px;
+	margin-right: 70px;
+}
+
+
+#top .text img{
+	display: block;
+	max-width: 100px;
+	margin:auto;
+}
+
+#top .text h2,
+#top .text button{
+	color: var(--bs-red) !important;
+}
+
+#top .text h2{
+	font-size:50px;
+	letter-spacing: 20px;
+	text-align: center;
+}
+
+#top .text button{
+	display: block;
+	margin:auto;
+	margin-top:25px;
+	box-shadow: 5px 10px 10px 0px rgba(100,100,100,.5)
+}
+
+#body .row{
+	max-width: 600px;
+	margin:auto;
+}
+
+#body .row .col{
+	position:relative;
+}
+
+#body .row img{
+	display: block;
+	width: 100%;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index: 1;
+	top:-15px;
+}
+
+#body .row h4{
+	position:relative;
+	font-family: 'Vista';
+	text-align: center;
+	padding: 20px 10px;
+	z-index: 10;
+}
+
+#body .row h4 span{
+	font-family: 'Smith' !important;
+}

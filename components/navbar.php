@@ -16,16 +16,16 @@
               <div class="navbar-nav mt-2 mt-lg-0">
                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link" href="index">HOME</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">PRODUCTS</a>
+                        <a class="nav-link" href="products">PRODUCTS</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">FAQS</a>
+                        <a class="nav-link" href="faqs">FAQS</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="about">ABOUT US</a>
                       </li>
                     </ul>
               </div>
@@ -33,7 +33,7 @@
               <div class="navbar-nav ml-auto mt-2 mt-lg-0" style="margin-left:auto;">
                    <ul class="navbar-nav mt-2 mt-lg-0">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="contact">CONTACT US</a>
                       </li>
                       <li class="nav-item">
                         <button class="btn background-white text-dark">ENG</button>

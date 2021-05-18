@@ -1,0 +1,54 @@
+
+#top h2{
+	text-align: center;
+	font-size:50px;
+}
+
+#top img{
+	display: block;
+	width:80%;
+	max-width: 600px;
+	margin:auto;
+}
+
+.card-border{
+	margin:auto;
+	border-radius:30px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	margin-top:25px;
+	margin-bottom:25px;
+	max-width: 250px;
+	box-shadow: 5px 10px 10px 0px rgba(100,100,100,0.2);
+
+}
+
+.card_footer{
+	margin-left:auto;
+	width:100%;
+}
+
+.card_footer .btn-card-right{
+	border-bottom-left-radius:100px;
+}
+
+.card_footer .btn-cart-left{
+	border-bottom-right-radius:30px;
+}
+
+.card_footer span{
+	font-size:25px;
+}
+
+.card img{
+	display: block;
+	margin:auto;
+	max-width: 150px;
+}
+
+.card strong,
+.card p{
+	display: block;
+	width:100%;
+	text-align: center;
+}

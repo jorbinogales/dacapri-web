@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="<?php echo $ruta ?>dist/css/bootstrap/bootstrap.min.css">
 	<!-- ESTILOS DE ICONOS  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/font/styles.css">
-	<!-- ESTILOS DEL INDEX  -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/index.css">
 	<!-- ESTILOS DEL FOOTER  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/footer.css">
 </head>

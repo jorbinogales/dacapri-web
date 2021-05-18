@@ -8,3 +8,7 @@
   font-family: "Vista";
   src: url("../../fonts/vistasansaltreg.ttf");
 }
+
+:root{
+    --bs-red: #EE1D25;
+}
