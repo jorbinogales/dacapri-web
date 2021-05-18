@@ -9,6 +9,38 @@
   src: url("../../fonts/vistasansaltreg.ttf");
 }
 
+@font-face {
+  font-family: "VistaBlackita";
+  src: url("../../fonts/vistasansscblackita.ttf");
+}
+
+@font-face {
+  font-family: "Vistalight";
+  src: url("../../fonts/vistasansaltlight.ttf");
+}
+
+
+@font-face {
+  font-family: "VistaAltMed";
+  src: url("../../fonts/vistasansaltmed.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../../fonts/myriadpro-light.otf");
+}
+
+@font-face {
+  font-family: "Vistasansscbook";
+  src: url("../../fonts/vistasansscbook.ttf");
+}
+
+
+@font-face {
+  font-family: "VistaBlack";
+  src: url("../../fonts/vistasansscblack.ttf");
+}
+
 :root{
     --bs-red: #EE1D25;
 }

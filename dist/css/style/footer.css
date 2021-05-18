@@ -4,8 +4,15 @@
 	z-index: 1000;
 }
 
+
+.navbar .nav-item.active a{
+	color: var(--bs-red) !important;
+	font-weight: bold;
+}
+
 button{
 	color:white !important;
+	font-family: 'VistaAltMed';
 }
 ul{
 	list-style: none;
@@ -27,12 +34,17 @@ ul{
 	background:#009246;
 }
 
+.navbar .nav-link{
+	font-family: 'Vistasansscbook' !important;
+}
+
 .background-light{
 	background: #ffffff;
 }
 
 #contact p{
-	font-size:25px;
+	font-size:35px;
+	font-family: 'VistaBlackita';
 }
 
 #contact ul{
@@ -80,6 +92,7 @@ footer{
 footer h5{
 	text-align: right;
 	padding-top:20px;
+	font-family: 'VistaAltMed';
 }
 
 footer .linea{
@@ -110,6 +123,10 @@ footer .icons li img{
 	width: 100%;
 	max-width: 60px;
 	margin:auto;
+}
+
+footer p{
+	font-family: 'Vistalight';
 }
 
 footer .right p{

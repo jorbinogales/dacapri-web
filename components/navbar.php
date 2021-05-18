@@ -1,5 +1,24 @@
 <?php 
-	function navbarPHP($ruta){
+	function navbarPHP($ruta, $page){
+    $indexItem = "";
+    $productsItem = "";
+    $aboutItem = "";
+    $faqItem = "";
+
+    switch ($page) {
+      case 'index':
+        $indexItem = "active";
+      break;
+      case 'products':
+        $productsItem = "active";
+      break;
+      case 'about':
+        $aboutItem = "active";
+      break;
+      case 'faq':
+        $faqItem = "active";
+      break;
+    }
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
   <div class="container">
@@ -15,16 +34,16 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav mt-2 mt-lg-0">
                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item active">
+                      <li class="nav-item <?php echo $indexItem ?>">
                         <a class="nav-link" href="index">HOME</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item <?php echo $productsItem ?>">
                         <a class="nav-link" href="products">PRODUCTS</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item <?php echo $faqItem ?>">
                         <a class="nav-link" href="faq">FAQS</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item <?php echo $aboutItem ?>">
                         <a class="nav-link" href="about">ABOUT US</a>
                       </li>
                     </ul>
@@ -32,7 +51,7 @@
 
               <div class="navbar-nav ml-auto mt-2 mt-lg-0" style="margin-left:auto;">
                    <ul class="navbar-nav mt-2 mt-lg-0">
-                      <li class="nav-item active">
+                      <li class="nav-item">
                         <a class="nav-link" href="contact">CONTACT US</a>
                       </li>
                       <li class="nav-item">

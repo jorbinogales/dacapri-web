@@ -7,7 +7,7 @@
 	}
 
 	echo headerPHP($ruta, $page);
-	echo navbarPHP($ruta);
+	echo navbarPHP($ruta, $page);
 	if(!isset($_GET['page'])){
 		require 'pages/index.php';
 		indexPage($ruta);

@@ -2,6 +2,7 @@
 #top h2{
 	text-align: center;
 	font-size:50px;
+	font-family: 'Smith';
 }
 
 #top img{
@@ -20,7 +21,6 @@
 	margin-bottom:25px;
 	max-width: 250px;
 	box-shadow: 5px 10px 10px 0px rgba(100,100,100,0.2);
-
 }
 
 .card_footer{
@@ -46,7 +46,16 @@
 	max-width: 150px;
 }
 
-.card strong,
+.card span{
+	font-family: 'VistaBlack';
+}
+
+.card p{
+	margin:0;
+	font-family: 'Vistalight';
+}
+
+.card span,
 .card p{
 	display: block;
 	width:100%;

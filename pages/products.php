@@ -38,8 +38,8 @@
 								<div class="card card-border">
 									<div class="card-body">
 										<img src="<?php echo $ruta?>dist/img/product<?php echo $i+1 ?>.png" class="w-100">
-										<strong><?php echo $productsName[$i] ?></strong>
-										<p><?php echo $productsPrice[$i]?></p>
+										<p><?php echo $productsName[$i] ?></p>
+										<span><?php echo $productsPrice[$i]?></span>
 										<div class="row card_footer p-0">
 											<div class="col-6">
 												<button type="button" class="text-dark btn btn-card-right
