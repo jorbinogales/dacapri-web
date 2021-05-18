@@ -1,23 +1,13 @@
 
 #top{
-	position:relative;
-	min-height: 450px;
-	background-image: url('../../img/bg-top.png');
-	background-size:cover;
-}
-
-#top img{
-	top:0;
-	position:absolute;
-	max-width: 700px;
-	margin-top:-50px;
-	margin-left:;
+	min-height: 300px;
+	padding:25px;
 }
 
 #top .text{
-	margin-top:100px;
-	margin-right: 70px;
+	margin-top:0px;
 }
+
 
 #top p{
 	position:relative;
@@ -36,9 +26,8 @@
 	transform: rotate(-2deg) !important;
 }
 
-
-
 #slider img{
+	width:100%;
 	display: block;
 	margin:auto;
 	max-width: 400px;
@@ -67,6 +56,24 @@
 	z-index: 2;
 }
 
+#info #second{
+	position:relative;
+	min-height: 300px;
+	margin-top:75px;
+}
+
+#info #second img{
+	display: block;
+	width:80%;
+	position:absolute;
+	max-width: 500px;
+	margin:auto;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
 #banner p{
 	position:relative;
 	font-family: 'Smith';
@@ -91,24 +98,6 @@
 	font-weight: 500;
 }
 
-#info #second{
-	position:relative;
-	min-height: 300px;
-	margin-top:75px;
-}
-
-#info #second img{
-	display: block;
-	width:80%;
-	position:absolute;
-	max-width: 500px;
-	margin:auto;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
-}
-
 #info #second p{
 	position:relative;
 	display: block;
@@ -120,3 +109,32 @@
 	font-weight: 100;
 }
 
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+	#top{
+		position:relative;
+		min-height: 450px;
+		background-image: url('../../img/bg-top.png');
+		background-size:cover;
+	}
+
+	#top img{
+		top:0;
+		position:absolute;
+		max-width: 700px;
+		margin-top:-50px;
+		margin-left:;
+	}
+
+	#top .text{
+		margin-top:100px;
+		margin-right: 70px;
+	}
+
+
+
+
+
+}

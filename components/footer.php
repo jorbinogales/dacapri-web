@@ -33,10 +33,10 @@ function footerPHP($ruta){
 				<h5 class="d-block text-right">FOLLOW US</h5>
 				<span class="linea"></span>
 				<div class="row">
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<img src="<?php echo $ruta?>dist/img/logo.png" alt="logo_dacapri" class="w-100 logo">
 					</div>
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<ul class="d-flex icons">
 							<li><img src="<?php echo $ruta?>dist/img/ico1.png" alt="ico_dacapri"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico2.png" alt="ico_dacapri"></li>
@@ -46,7 +46,7 @@ function footerPHP($ruta){
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<ul>
 							<li>
 								<p><span class="icon-phone"></span> Local number: +1 (305) 603-7145</p>
@@ -56,7 +56,7 @@ function footerPHP($ruta){
 							</li>
 						</ul>
 					</div>
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<ul>
 							<li></li>
 							<li>
