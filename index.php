@@ -38,5 +38,5 @@
 		}
 	}
 
-	echo footerPHP($ruta);
+	echo footerPHP($ruta, $page);
 ?>

@@ -4,6 +4,9 @@
 	z-index: 1000;
 }
 
+.star-hover{
+	color: var(--bs-green) !important;
+}
 
 .navbar .nav-item.active a{
 	color: var(--bs-red) !important;

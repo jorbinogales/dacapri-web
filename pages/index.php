@@ -12,7 +12,7 @@
 						<div class="text text-center">
 							<p>ARTISAN, VEGAN</p>
 							<span>Italian Traition Pasta<br>and more... </span>
-							<button type="button" class="btn background-transparent m-auto d-block mt-5">EXPLORE OUR PRODUCTS</button>
+							<a type="button" class="btn background-transparent m-auto d-block mt-5" href="products">EXPLORE OUR PRODUCTS</a>
 						</div>
 					</div>
 				</div>
