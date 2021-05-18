@@ -14,7 +14,7 @@ $('.star').on('mouseenter', function(event){
 $('#formContact').submit(function(e){
 	e.preventDefault();
 	$.ajax({
-		url: 'http://api.dacapryfactory.net/api/contact/create',
+		url: 'http://api.dacaprifactory.net/api/contact/create',
 		type: 'post',
 		dataType: 'json',
 		data: $(this).serialize(),
