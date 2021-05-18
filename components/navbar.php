@@ -22,7 +22,7 @@
                         <a class="nav-link" href="products">PRODUCTS</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="faqs">FAQS</a>
+                        <a class="nav-link" href="faq">FAQS</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="about">ABOUT US</a>

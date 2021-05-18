@@ -1,6 +1,5 @@
 <?php function indexPage($ruta){ ?>
 	<!-- ESTILOS DEL INDEX  -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/index.css">
 	
 	<section id="top" class="background-red">
 		<div class="container">

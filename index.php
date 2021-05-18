@@ -1,7 +1,12 @@
 <?php
 	require 'components/components.php';
+	
+	$page = 'index';
+	if(isset($_GET['page'])){
+		$page = $_GET['page'];
+	}
 
-	echo headerPHP($ruta);
+	echo headerPHP($ruta, $page);
 	echo navbarPHP($ruta);
 	if(!isset($_GET['page'])){
 		require 'pages/index.php';
@@ -18,7 +23,7 @@
 				require 'pages/about.php';
 				aboutPage($ruta);
 			break;
-			case 'faqs':
+			case 'faq':
 				require 'pages/faq.php';
 				faqPage($ruta);
 			break;

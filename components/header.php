@@ -1,5 +1,5 @@
 <?php 
-	function headerPHP($ruta){
+	function headerPHP($ruta , $page){
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/font/styles.css">
 	<!-- ESTILOS DEL FOOTER  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/footer.css">
+	<!-- ESTILOS DEL FOOTER  -->
+	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/<?php echo $page?>.css">
 </head>
 <body>
 <?php } ?>

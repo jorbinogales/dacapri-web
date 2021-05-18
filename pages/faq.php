@@ -1,7 +1,6 @@
 <?php
 	function faqPage($ruta){
 ?>
-<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/faq.css">
 <section id="top" class="p-4">
 	<div class="container">
 		<div class="container-fluid">

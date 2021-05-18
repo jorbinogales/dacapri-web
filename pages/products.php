@@ -7,7 +7,7 @@
 ?>
 
 <!-- ESTILOS DE PRODUCTS.PHP  -->
-<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/product.css">
+
 
 <section id="top" class="p-4 background-white">
 	<div class="container">

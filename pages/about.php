@@ -1,7 +1,6 @@
 <?php
 	function aboutPage($ruta){
 ?>
-<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/about.css">
 <section id="top" class="background-white p-4">
 	<div class="container">
 		<div class="container-fluid">
@@ -93,7 +92,7 @@
 				<div class="col-12">
 					<ul class="d-flex">
 						<li>
-							<img src="<?php echo $ruta?>dist/img/about6.png" alt="">
+							<img src="<?php echo $ruta?>dist/img/about8.png" alt="">
 							<p>Cristo de san blas, Maratea, 1895.</p>
 						</li>
 						<li>
@@ -101,7 +100,7 @@
 							<p>Valle de Caracas, Venezuela, 1953.</p>
 						</li>
 						<li>
-							<img src="<?php echo $ruta?>dist/img/about8.png" alt="">
+							<img src="<?php echo $ruta?>dist/img/about6.png" alt="">
 							<p>Miami, Estados Unidos, 2017</p>
 						</li>
 					</ul>
