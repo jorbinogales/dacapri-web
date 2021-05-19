@@ -15,6 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/footer.css">
 	<!-- ESTILOS DEL FOOTER  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/<?php echo $page?>.css">
+	<!-- LOADING  -->
+	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/loading.css">
 </head>
 <body>
+
+	<!-- Loading HTML -->
+	<div class="loading show">
+	    <div class="spin"></div>
+	</div>
 <?php } ?>

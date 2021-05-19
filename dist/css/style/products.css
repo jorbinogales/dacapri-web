@@ -1,8 +1,16 @@
 
+#top{
+	background: rgb(180,41,50);
+	background: linear-gradient(180deg, rgba(180,41,50,1) 0%, rgba(205,43,54,1) 100%);
+}
+
 #top h2{
+	position:relative;
 	text-align: center;
-	font-size:50px;
+	font-size:60px;
 	font-family: 'Smith';
+	color:white;
+	top:50px;
 }
 
 #top img{
@@ -12,15 +20,80 @@
 	margin:auto;
 }
 
+.list-bg,
+.card-border{
+	border-radius:30px;
+	box-shadow: 5px 10px 10px 0px rgba(100,100,100,0.2);
+}
+
 .card-border{
 	margin:auto;
-	border-radius:30px;
 	border-top-right-radius: 100px;
 	border-bottom-left-radius: 100px;
 	margin-top:25px;
 	margin-bottom:25px;
 	max-width: 250px;
-	box-shadow: 5px 10px 10px 0px rgba(100,100,100,0.2);
+}
+
+.list-btn{
+	display: block;
+	margin:auto;
+	max-width: 200px;
+	position:relative;
+}
+
+.list-btn .card-body{
+	position:relative;
+}
+
+.list-btn .card-body ul{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	z-index: 100;
+}
+
+.list-btn .list-bg{
+	position:absolute;
+	top:0;
+	left:0;
+	right: 0;
+	margin:auto;
+	display: block;
+	width:150px;
+	z-index: 50;
+}
+
+.list-btn ul{
+	z-index: 100;
+}
+
+.list-btn ul li{
+	margin-top:10px;
+}
+
+.list-btn ul li button{
+	display: block;
+	width:100%;
+	font-family: 'Smith';
+	font-size:30px;
+	border-radius: 30px;
+	width: 200px;
+}
+
+.card.card-item:hover{
+	transform: scale(1.1);
+	cursor:pointer;
+	transition: all .5s ease-in-out;
+}
+
+.card.card-item:hover .btn.background-white{
+	background-color: #EE1D25;
+	color:white !important;
+	transition: all .5s ease-in-out;
 }
 
 .card_footer{
@@ -28,13 +101,11 @@
 	width:100%;
 }
 
-.card_footer .btn-card-right{
+.card_footer .btn-card{
 	border-bottom-left-radius:100px;
-}
-
-.card_footer .btn-cart-left{
 	border-bottom-right-radius:30px;
 }
+
 
 .card_footer span{
 	font-size:25px;

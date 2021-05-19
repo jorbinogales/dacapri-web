@@ -1,6 +1,211 @@
 <?php
 	function faqPage($ruta){
 ?>
+
+<?php 
+		$contextText = array(
+			'top' => array(
+				'title' => 'frequent ',
+				'subtitle' => 'Questions',
+				'button' => 'EXPLORER OUR PRODUCTS'
+			),
+			'faq' => array(
+				0 => array(
+					'title' => 'Where can I buy <br> Da Capri products?',
+					'resp' => 'You can buy them on our online
+								shop, through the “products” tab on
+								our web site or going to any of our
+								allies establishments. You can nd
+								the list of establishments that sell
+								our products here.'
+				),
+				1 => array(
+					'title' => 'How does the online <br> shop works?',
+					'resp' => 'You can buy them on our online
+								shop, through the “products” tab on
+								our web site or going to any of our
+								allies establishments. You can nd
+								the list of establishments that sell
+								our products here.'
+				),
+				2 => array(
+					'title' => 'Which are the <br>payments Options?',
+					'resp' => 'When you have all you want in your
+								cart, you can choose to pay with
+								your credit card or via wire transfer
+								to our bank account.'
+				),
+				3 => array(
+					'title' => 'How can I buy<br>
+								Da Capri products if<br>
+								I am not in Miami?',
+					'resp' => 'You place your order through our
+								online shop and we arrange shipment with a delivery Company that
+								covers your location.'
+				),
+				4 => array(
+					'title' => 'What do I do if I whant to<br>
+		 						sell Da Capri products<br>
+								in my establishments<br>
+								become a supplier?',
+					'resp' => 'To become one of our allies you can
+								send an e-mail to info@dacaprifactory.com 
+								with your company’s information 
+								and the product or service 
+								you would like to offer. Our team
+								will reach you as soon as posible.'
+				),
+				5 => array(
+					'title' => 'When should I ex pect<br>
+								my order to arrive?',
+					'resp' => 'If you are located in Miami dade
+								county your order will arrive the
+								next day. If you are outside Miami,
+								time will depend on distance.'
+				),
+				6 => array(
+					'title' => 'Why do you<br>
+								use semolina?',
+					'resp' => 'Semolina is a traditional Italian
+								ingredient used as the base for
+								pasta dough. It is a type of wheat
+								flour, but it is thicker and healthier
+								than common wheat flour.'
+				),
+				7 => array(
+					'title' => 'Why are Da Capri ’s<br>
+ 								pasta 100% vegan?',
+					'resp' => 'That’s because our pasta doesn’t
+								have any type of animal products.
+								Generally, pasta dough has eggs on
+								the mixture. Our dough is made
+								with water, semolina and fresh vegetables.'
+				),
+				8 => array(
+					'title' => 'How natural are<br>
+								the ingredients used?',
+					'resp' => '100% natural, since we use semolina, 
+								a less processed wheat flour,
+								and fresh vegetables. No additives.'
+				),
+				9 => array(
+					'title' => 'How is<br>
+ 								pasta colored?',
+					'resp' => 'Pasta takes color from the vegetable 
+								used for it’s preparation: Semolina (traditional),
+								tomato, carrot, spinach and beet root. 
+								None of our presentations 
+								has any type of artificial
+								coloring.'
+				)
+			)
+		);
+
+		if(isset($_GET['idiom']) && $_GET['idiom'] == 'esp'){
+				$contextText = array(
+					'top' => array(
+						'title' => 'Preguntas ',
+						'subtitle' => 'frecuentes',
+						'button' => 'EXPLORA NUESTROS PRODUCTOS'
+					),
+					'faq' => array(
+						0 => array(
+							'title' => '¿En donde puedo adquirir <br> los productos Da 			capri?',
+							'resp' => 'Los puedes adquirir en nuestra
+										tienda virtual, ingresando en la
+										pestaña “productos” en nuestra
+										página web o acudiendo a cualquiera de nuestros puntos de ventas aliados, la lista de establecimientos la puedes conseguir aqui.'
+						),
+						1 => array(
+							'title' => '¿Cómo comprar en la <br> tienda virtual Da Capri?',
+							'resp' => 'Ingresas a la pestaña “productos”,
+										cuando hayas seleccionado todos
+										tus productos presionas “agregar al
+										carrito”. Seleccionas el método de
+										pago, realizas el pago y nuestro
+										equipo de ventas vericará y
+										procesara el pedido.'
+						),
+						2 => array(
+							'title' => '¿Cuáles son los métodos de pago?',
+							'resp' => 'Cuando hayas agregado todo lo que
+										deseas a tu carrito, puedes realizar
+										el pago a través de una transferencia 
+										bancaria cargando el comprobante 
+										o directamente con tu tarjeta
+										de crédito.'
+						),
+						3 => array(
+							'title' => '¿Cómo puedo comprar <br> productos Da capri <br> si estoy fuera de Miami?',
+							'resp' => 'Realizas la compra a través de
+										nuestra tienda virtual y nosotros
+										coordinamos el envío con una empresa 
+										de repartos con cobertura en
+										tu localidad.'
+						),
+						4 => array(
+							'title' => '¿Cómo hago si quiero ser<br>
+				 						proveedor Da capri o<br>
+										vender productos<br>
+										en mi negocio?',
+							'resp' => 'Para convertirte en nuestro aliado
+										puedes enviarnos un correo a
+										info@dacaprifactory.com con los
+										datos de tu negocio y el producto/servicio
+										 que requieres o ofreces,
+										nuestro equipo se pondrá en contacto 
+										contigo a la brevedad posible.'
+						),
+						5 => array(
+							'title' => '¿En cuánto tiempo<br>
+ 										llegaría mi pedido?',
+							'resp' => 'Si te encuentras en el condado de
+										Miami el pedido te llegará al día siguiente.
+										 Si te encuentras fuera de
+										Miami el tiempo depende de la distancia.'
+						),
+						6 => array(
+							'title' => '¿Por qué usan
+										semolina?',
+							'resp' => 'La semolina es el ingrediente italiano 
+										tradicional utilizado como base
+										de la pasta, es un tipo de harina que
+										se extrae del trigo. Es más gruesa y
+										saludable que la harina de trigo
+										común.'
+						),
+						7 => array(
+							'title' => '¿Por qué las pastas<br>
+										Da Capri son<br>
+										100% veganas?',
+							'resp' => 'Esto se debe a que las pastas Da
+										Capri no tienen ningún tipo de producto animal, la masa de la pasta
+										generalmente lleva huevo. Los ingredientes
+										de nuestra pasta son
+										agua, semolina y vegetales frescos.'
+						),
+						8 => array(
+							'title' => '¿Qué tan natural<br>
+										son los ingrdientes?',
+							'resp' => '100% naturales ya que utilizamos
+										semolina, un tipo de harina de trigo
+										poco procesada y vegetales frescos
+										para la preparación sin aditivos.'
+						),
+						9 => array(
+							'title' => '¿Cómo adquiere<br>
+										color la pasta?',
+							'resp' => 'Nuestras pastas tienen el color del
+										vegetal que se utiliza para su preparación: Semolina (tradicional),
+										tomate, zanahoria, espinaca y remolacha. 
+										Ninguna de nuestras
+										presentaciones posee colorante
+										artificial.'
+						)
+					)
+			);
+		}
+?>
 <section id="top" class="p-4">
 	<div class="container">
 		<div class="container-fluid">
@@ -11,8 +216,9 @@
 				<div class="col-12 col-md-6">
 					<div class="text">
 						<img src="<?php echo $ruta?>dist/img/logo.png" alt="logo_dacapri">
-						<h2>FAQS</h2>
-						<button type="button" class="btn background-white">EXPLORER OUR PRODUCTS</button>
+						<h2><?php echo $contextText['top']['title'] ?></h2>
+						<h3><?php echo $contextText['top']['subtitle'] ?></h3>
+						<a href="https://dacaprifactory.com/" class="btn background-white"><?php echo $contextText['top']['button'] ?></a>
 					</div>
 				</div>
 			</div>
@@ -24,107 +230,15 @@
 	<div class="container">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq1.png" alt="faq_decapri">
-					<h4>Where can I buy <br> Da Capri products?</h4>
-					<p>You can buy them on our online
-					shop, through the “products” tab on
-					our web site or going to any of our
-					allies establishments. You can nd
-					the list of establishments that sell
-					our products here.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq2.png" alt="faq_decapri">
-					<h4>How does the online <br> shop works?</h4>
-					<p>You can buy them on our online
-					shop, through the “products” tab on
-					our web site or going to any of our
-					allies establishments. You can nd
-					the list of establishments that sell
-					our products here.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq3.png" alt="faq_decapri">
-					<h4>Which are the <br> <span>payments Options?</span></h4>
-					<p>When you have all you want in your
-					cart, you can choose to pay with
-					your credit card or via wire transfer
-					to our bank account.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq4.png" alt="faq_decapri">
-					<h4>How can I buy<br>
-						Da Capri products if<br>
-						I am not in Miami?</h4>
-					<p>You place your order through our
-					online shop and we arrange ship -
-					ment with a delivery Company that
-					covers your location.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq5.png" alt="faq_decapri">
-					<h4>What do I do if I whant to<br>
- 						sell Da Capri products<br>
-						<span>in my establishments</span><br>
-						become a supplier?</h4>
-					<p>To become one of our allies you can
-					send an e-mail to info@dacaprifac -
-					tory.com with your company’s in -
-					formation and the product or servi -
-					ce you would like to offer. Our team
-					will reach you as soon as posible.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq6.png" alt="faq_decapri">
-					<h4>When should I ex pect<br>
-						my order to arrive?</h4>
-					<p>If you are located in Miami dade
-					county your order will arrive the
-					next day. If you are outside Miami,
-					time will depend on distance.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq7.png" alt="faq_decapri">
-					<h4>Why do you<br>
-						use semolina?</h4>
-					<p>Semolina is a traditional Italian
-					ingredient used as the base for
-					pasta dough. It is a type of wheat
-					flour, but it is thicker and healthier
-					than common wheat flour.</p>
-				</div>
-				<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq8.png" alt="faq_decapri">
-					<h4>Why are Da Capri ’s<br>
- 						pasta 100% vegan?</h4>
-					<p>That’s because our pasta doesn’t
-					have any type of animal products.
-					Generally, pasta dough has eggs on
-					the mixture. Our dough is made
-					with water, semolina and fresh ve -
-					getables.</p>
-				</div>
+				<?php $i = 1; ?>
+				<?php foreach($contextText['faq'] as $faq){ ?>
 					<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq9.png" alt="faq_decapri">
-					<h4>How natural are<br>
-						the ingredients used?</h4>
-					<p>100% natural, since we use semoli -
-						na, a less processed wheat flour,
-						and fresh vegetables. No additives.</p>
-				</div>
-					<div class="col col-12 col-md-6">
-					<img src="<?php echo $ruta ?>dist/img/faq10.png" alt="faq_decapri">
-					<h4><span>How is</span><br>
- 						pasta colored?</h4>
-					<p>Pasta takes color from the vegeta -
-						ble used for it’s preparation: Semoli -
-						na (traditional), tomato, carrot, spi -
-						nach and beet root. None of our pre -
-						sentations has any type of artificial
-						coloring.</p>
-				</div>
-
+						<img src="<?php echo $ruta ?>dist/img/faq<?php echo $i ?>.png" alt="faq_decapri">
+						<h4><?php echo $faq['title'] ?></h4>
+						<p><?php echo $faq['resp'] ?></p>
+					</div>
+					<?php $i++; ?>
+				<?php } ?>
 			</div>
 		</div>
 	</div>	

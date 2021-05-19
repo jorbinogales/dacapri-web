@@ -13,6 +13,7 @@
 }
 
 #top .text{
+	position:relative;
 	margin-top:100px;
 	margin-right: 70px;
 }
@@ -25,21 +26,33 @@
 }
 
 #top .text h2,
-#top .text button{
-	color: var(--bs-red) !important;
+#top .text a{
+	color: var(--bs-red);
 }
 
 #top .text h2{
 	font-size:50px;
-	letter-spacing: 20px;
 	text-align: center;
+	font-family: 'VistaBlackita';
+	text-transform: uppercase;
 }
 
-#top .text button{
+#top .text h3{
+	top:75px;
+	left:0;
+	right:0;
+	position:absolute;
+	font-size:35px;
+	text-align: center;
+	font-family: 'Smith';
+}
+
+#top .text a{
 	display: block;
 	margin:auto;
-	margin-top:25px;
-	box-shadow: 5px 10px 10px 0px rgba(100,100,100,.5)
+	margin-top:35px;
+	box-shadow: 5px 10px 10px 0px rgba(100,100,100,.5);
+	max-width: 300px;
 }
 
 #body .row{
@@ -64,12 +77,13 @@
 
 #body .row h4{
 	position:relative;
-	font-family: 'Vista';
+	font-family: 'Smith';
 	text-align: center;
 	padding: 20px 10px;
 	z-index: 10;
 }
 
-#body .row h4 span{
-	font-family: 'Smith' !important;
+#body .row p{
+	font-family: 'VistaAltMed';
+	text-align: center;
 }

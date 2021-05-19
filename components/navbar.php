@@ -25,14 +25,21 @@
 
     $navbarText = ['HOME', 'PRODUCTS','FAQS', 'ABOUT US', 'CONTACT'];
 
-    if(isset($_GET['idiom']) && $_GET['idiom'] == 'esp'){
-
-
+    if(isset($_GET['idiom'])){
         $nav_link = '../';
         $get_idiom = '/'.$_GET['idiom'];
+        switch ($_GET['idiom']) {
+          case 'esp':
+            $navbarText = ['INICIO', 'PRODUCTOS', 'PREGUNTAS', 'NOSOTROS', 'CONTACTANOS'];
+          break;
+          default:
+            $navbarText = ['HOME', 'PRODUCTS','FAQS', 'ABOUT US', 'CONTACT'];
+          break;
+        }
+        
 
-        $navbarText = ['INICIO', 'PRODUCTOS', 'PREGUNTAS', 'NOSOTROS', 'CONTACTANOS'];
-    }
+       
+    } 
 
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
@@ -80,7 +87,7 @@
               <div class="navbar-nav ml-auto mt-2 mt-lg-0" style="margin-left:auto;">
                    <ul class="navbar-nav mt-2 mt-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" href="contact">
+                        <a class="nav-link" href="<?php echo $nav_link ?>contact<?php echo $get_idiom?>">
                           <?php echo $navbarText[4] ?>
                         </a>
                       </li>

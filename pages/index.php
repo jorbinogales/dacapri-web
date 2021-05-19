@@ -132,17 +132,18 @@
 		<div class="container">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="d-none d-md-block col-12 col-md-6">
-						<img src="<?php echo $ruta?>dist/img/plato.png" alt="">
+					<div class="d-none d-md-block col-12 col-md-6" style="position:relative;">
+						<img src="<?php echo $ruta?>dist/img/platosolo3.png" id="image_3">
+						<img src="<?php echo $ruta?>dist/img/platosolo2.png"  id="image_2">
+						<img src="<?php echo $ruta?>dist/img/platosolo.png"  id="image_1">
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="text text-center">
 							<p><?php echo $contentText['first']['title'] ?></p>
 							<span><?php echo $contentText['first']['description'] ?></span>
-							<a type="button" class="btn background-transparent m-auto d-block mt-5" href="products">
+							<a type="button" class="btn background-transparent m-auto d-block mt-5" href="https://dacaprifactory.com/">
 								<?php echo $contentText['first']['button'] ?>
-									
-								</a>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -190,7 +191,7 @@
 						<div class="col-12 col-md-4">
 							<h4><?php echo $contentText['four']['title'][$i] ?></h4>
 							<div class="p-4">
-								<p><?php echo $contentText['four']['descriptions'][$i] ?></p>
+								<p class="text-center"><?php echo $contentText['four']['descriptions'][$i] ?></p>
 							</div>
 						</div>
 					<?php
