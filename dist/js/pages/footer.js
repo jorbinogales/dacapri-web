@@ -19,9 +19,10 @@ $('#formContact').submit(function(e){
 		dataType: 'json',
 		data: $(this).serialize(),
 		success: function(resp){
-			console.log(resp);
+			var btn = document.querySelector('#registerBtn');
+			btn.click();
 		}
 	}).fail(function(resp){
-		console.log(resp);
+		
 	})
 })

@@ -6,8 +6,8 @@
 		$page = $_GET['page'];
 	}
 
-	echo headerPHP($ruta, $page);
-	echo navbarPHP($ruta, $page);
+	echo headerPHP($ruta, $page, $idiom);
+	echo navbarPHP($ruta, $page, $idiom);
 	if(!isset($_GET['page'])){
 		require 'pages/index.php';
 		indexPage($ruta);

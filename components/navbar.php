@@ -1,5 +1,5 @@
 <?php 
-	function navbarPHP($ruta, $page){
+	function navbarPHP($ruta, $page, $idiom){
     $indexItem = "";
     $productsItem = "";
     $aboutItem = "";
@@ -19,6 +19,21 @@
         $faqItem = "active";
       break;
     }
+
+    $nav_link = '';
+    $get_idiom = '';
+
+    $navbarText = ['HOME', 'PRODUCTS','FAQS', 'ABOUT US', 'CONTACT'];
+
+    if(isset($_GET['idiom']) && $_GET['idiom'] == 'esp'){
+
+
+        $nav_link = '../';
+        $get_idiom = '/'.$_GET['idiom'];
+
+        $navbarText = ['INICIO', 'PRODUCTOS', 'PREGUNTAS', 'NOSOTROS', 'CONTACTANOS'];
+    }
+
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
   <div class="container">
@@ -35,16 +50,29 @@
               <div class="navbar-nav mt-2 mt-lg-0">
                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                       <li class="nav-item <?php echo $indexItem ?>">
-                        <a class="nav-link" href="index">HOME</a>
+                        <a class="nav-link" href="<?php echo $nav_link ?>index<?php echo $get_idiom?>">
+
+                        <?php echo $navbarText[0] ?>
+
+                      </a>
                       </li>
                       <li class="nav-item <?php echo $productsItem ?>">
-                        <a class="nav-link" href="products">PRODUCTS</a>
+
+                        <a class="nav-link" href="<?php echo $nav_link ?>products<?php echo $get_idiom?>">
+
+                          <?php echo $navbarText[1] ?>
+                        </a>
+
                       </li>
                       <li class="nav-item <?php echo $faqItem ?>">
-                        <a class="nav-link" href="faq">FAQS</a>
+                        <a class="nav-link" href="<?php echo $nav_link ?>faq<?php echo $get_idiom?>">
+                        <?php echo $navbarText[2] ?>
+                      </a>
                       </li>
                       <li class="nav-item <?php echo $aboutItem ?>">
-                        <a class="nav-link" href="about">ABOUT US</a>
+                        <a class="nav-link" href="<?php echo $nav_link ?>about<?php echo $get_idiom?>">
+                          <?php echo $navbarText[3] ?>
+                        </a>
                       </li>
                     </ul>
               </div>
@@ -52,10 +80,33 @@
               <div class="navbar-nav ml-auto mt-2 mt-lg-0" style="margin-left:auto;">
                    <ul class="navbar-nav mt-2 mt-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" href="contact">CONTACT US</a>
+                        <a class="nav-link" href="contact">
+                          <?php echo $navbarText[4] ?>
+                        </a>
                       </li>
                       <li class="nav-item">
-                        <button class="btn background-white text-dark">ENG</button>
+                        <div class="dropdown">
+                          <button class="btn background-white text-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <?php if(!isset($_GET['idiom'])){ ?>
+                              ENG
+                            <?php } else { ?>
+                              <?php echo strtoupper($_GET['idiom']); ?>
+                            <?php } ?>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+                            <?php if(!isset($_GET['idiom'])){ ?>
+                              <a class="dropdown-item" href="<?php echo $page ?>/eng">ENG</a>
+                              <a class="dropdown-item" href="<?php echo $page ?>/esp">ESP</a>
+                            <?php } else { ?>
+                              <a class="dropdown-item" href="eng">ENG</a>
+                              <a class="dropdown-item" href="esp">ESP</a>
+                            <?php } ?>
+
+
+                          </div>
+                        </div>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#"><span class="icon-shopping-cart"></span></a>
