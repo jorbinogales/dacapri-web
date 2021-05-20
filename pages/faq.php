@@ -210,7 +210,7 @@
 	<div class="container">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="d-none d-md-block col-12 col-md-6">
 					<img src="<?php echo $ruta?>dist/img/plato.png" alt="plato_dacapri" class="food">
 				</div>
 				<div class="col-12 col-md-6">

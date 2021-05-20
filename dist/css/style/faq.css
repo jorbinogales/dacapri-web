@@ -15,7 +15,6 @@
 #top .text{
 	position:relative;
 	margin-top:100px;
-	margin-right: 70px;
 }
 
 
@@ -86,4 +85,10 @@
 #body .row p{
 	font-family: 'VistaAltMed';
 	text-align: center;
+}
+
+@media only screen and (min-width:768px){
+	#top .text{
+		margin-right:70px;
+	}
 }
