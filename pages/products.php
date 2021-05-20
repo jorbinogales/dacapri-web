@@ -3,7 +3,9 @@
 		require 'components/product.php';
 		$products = allProducts();
 		$productsName = $products['name'];
+
 		$productsPrice = $products['price'];
+		$productsUrl = $products['url'];
 ?>
 
 <?php 
@@ -71,7 +73,7 @@
 							for($i = 0; $i < count($productsName) ; $i++){
 						?>
 							<div class="col-6">
-								<div class="card card-border card-item">
+								<div class="card card-border card-item" onclick="window.location = '<?php echo $productsUrl[$i] ?>'">
 									<div class="card-body">
 										<img src="<?php echo $ruta?>dist/img/product<?php echo $i+1 ?>.png" class="w-100">
 										<p><?php echo $productsName[$i] ?></p>
