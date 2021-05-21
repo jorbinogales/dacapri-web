@@ -11,6 +11,16 @@ $('.star').on('mouseenter', function(event){
 	}
 })
 
+$(document).ready(function() {
+  var image = document.querySelector('#image-1');
+  console.log(image);
+  if(image != null){
+  		$('#image_1').addClass('transition-image-1');
+  		$('#image_2').addClass('transition-image-2');
+  		$('#image_3').addClass('transition-image-3');
+	}
+});
+
 $('#formContact').submit(function(e){
 	e.preventDefault();
 	$.ajax({

@@ -1,9 +1,3 @@
-$(document).ready(function() {
-  $('#image_1').addClass('transition-image-1');
-  $('#image_2').addClass('transition-image-2');
-  $('#image_3').addClass('transition-image-3');
-});
-
 $('.star').on('mouseenter', function(event){
 	var star = event.target.id;
 	var id = star.split("-");

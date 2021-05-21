@@ -139,9 +139,9 @@
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="text text-center">
-							<p><?php echo $contentText['first']['title'] ?></p>
-							<span><?php echo $contentText['first']['description'] ?></span>
-							<a type="button" class="btn background-transparent m-auto d-block mt-5" href="https://dacaprifactory.com/">
+							<p class="transition-top"><?php echo $contentText['first']['title'] ?></p>
+							<span class="transition-top"><?php echo $contentText['first']['description'] ?></span>
+							<a type="button" class="transition-bottom btn background-transparent m-auto d-block mt-5" href="https://dacaprifactory.com/">
 								<?php echo $contentText['first']['button'] ?>
 							</a>
 						</div>

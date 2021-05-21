@@ -210,15 +210,17 @@
 	<div class="container">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="d-none d-md-block col-12 col-md-6">
-					<img src="<?php echo $ruta?>dist/img/plato.png" alt="plato_dacapri" class="food">
+				<div class="d-none d-md-block col-12 col-md-6 position-relative">
+					<img src="<?php echo $ruta?>dist/img/platosolo3.png" id="image_3" class="food">
+					<img src="<?php echo $ruta?>dist/img/platosolo2.png"  id="image_2" class="food">
+					<img src="<?php echo $ruta?>dist/img/platosolo.png"  id="image_1" class="food">
 				</div>
 				<div class="col-12 col-md-6">
 					<div class="text">
-						<img src="<?php echo $ruta?>dist/img/logo.png" alt="logo_dacapri">
-						<h2><?php echo $contextText['top']['title'] ?></h2>
-						<h3><?php echo $contextText['top']['subtitle'] ?></h3>
-						<a href="https://dacaprifactory.com/" class="btn background-white"><?php echo $contextText['top']['button'] ?></a>
+						<img class="transition-top"src="<?php echo $ruta?>dist/img/logo.png" alt="logo_dacapri">
+						<h2 class="transition-top"><?php echo $contextText['top']['title'] ?></h2>
+						<h3 class="transition-bottom"><?php echo $contextText['top']['subtitle'] ?></h3>
+						<a href="https://dacaprifactory.com/" class="btn background-white transition-bottom"><?php echo $contextText['top']['button'] ?></a>
 					</div>
 				</div>
 			</div>
