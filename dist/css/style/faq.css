@@ -58,12 +58,15 @@
 }
 
 #body .row{
-	max-width: 600px;
+	max-width: 700px;
 	margin:auto;
 }
 
 #body .row .col{
+	display: block;
+	max-width: 300px;
 	position:relative;
+	margin:auto;
 }
 
 #body .row img{
@@ -74,14 +77,14 @@
 	right:0;
 	margin:auto;
 	z-index: 1;
-	top:-15px;
+	transform: scale(1.5);
 }
 
 #body .row h4{
 	position:relative;
 	font-family: 'Smith';
 	text-align: center;
-	padding: 20px 10px;
+	padding: 20px 30px 20px 30px;
 	z-index: 10;
 }
 

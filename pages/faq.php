@@ -110,7 +110,7 @@
 					),
 					'faq' => array(
 						0 => array(
-							'title' => '¿En donde puedo adquirir <br> los productos Da 			capri?',
+							'title' => '¿En dónde puedo adquirir <br> los productos Da 			capri?',
 							'resp' => 'Los puedes adquirir en nuestra
 										tienda virtual, ingresando en la
 										pestaña “productos” en nuestra
