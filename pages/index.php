@@ -5,7 +5,7 @@
 		$contentText = array(
 			"first" => array(
 				'title' => 'ARTISAN, VEGAN',
-				'description' => 'Italian Traition Pasta<br>and more... ',
+				'description' => 'Italian Tradition Pasta<br>and more... ',
 				'button' => 'EXPLORE OUR PRODUCTS'
 			),
 			"second" => array(
