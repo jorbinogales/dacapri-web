@@ -127,7 +127,8 @@
 		}
 	?>
 
-
+	<link rel="stylesheet" type="text/css" href="<?php echo $ruta ?>dist/css/style/slider.css">
+	<script src="<?php echo $ruta?>dist/js/slider.js"></script>
 	<section id="top" class="background-red">
 		<div class="container">
 			<div class="container-fluid">
@@ -156,10 +157,35 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
-						<img src="<?php echo $ruta?>dist/img/food.png" alt="food_dacapri">
-						<p class="text-center">
-							<?php echo $contentText['second']['title'] ?>
-						</p>
+						<!-- Slideshow container -->
+						<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade" id="mySlides_1">
+								<img src="<?php echo $ruta ?>dist/img/slider1.png">
+							</div>
+
+							<div class="mySlides fade" id="mySlides_2">
+								<img src="<?php echo $ruta?>dist/img/slider2.png">
+							</div>
+
+							<div class="mySlides fade" id="mySlides_3">
+								<img src="<?php echo $ruta?>dist/img/slider3.png">
+								
+							</div>
+
+							<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1)" style="text-decoration:none;">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)" style="text-decoration:none;">&#10095;</a>
+						</div>
+						<br>
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+							<span class="dot" id="dot_1" onclick="currentSlide(1)"></span>
+							<span class="dot" id="dot_2" onclick="currentSlide(2)"></span>
+							<span class="dot" id="dot_3" onclick="currentSlide(3)"></span>
+						</div>
+						<p class="text text-center"><?php echo $contentText['second']['title'] ?></p>
 					</div>
 				</div>
 			</div>
@@ -172,7 +198,7 @@
 				<div class="row">
 					<div class="col-12">
 						<img src="<?php echo $ruta?>dist/img/bg-food.png" alt="">
-						<p class="text-center">
+						<p class="text-center" style="opacity:0">
 							<?php echo $contentText['third']['title'] ?>
 						</p>
 					</div>
@@ -188,10 +214,10 @@
 					<?php
 					 $i = 0; 
 					foreach($contentText['four']['title'] as $text){?>
-						<div class="col-12 col-md-4">
-							<h4><?php echo $contentText['four']['title'][$i] ?></h4>
+						<div class="col-12 col-md-4 cards" id="cards_<?php echo $i ?>">
+							<h4 style="opacity:0"><?php echo $contentText['four']['title'][$i] ?></h4>
 							<div class="p-4">
-								<p class="text-center"><?php echo $contentText['four']['descriptions'][$i] ?></p>
+								<p class="text-center" style="opacity:0"><?php echo $contentText['four']['descriptions'][$i] ?></p>
 							</div>
 						</div>
 					<?php
@@ -204,7 +230,7 @@
 					<div class="col-12">
 						<img src="<?php echo $ruta?>dist/img/bg-food2.png" alt="">
 						<div class="text">
-							<p class="text-center">
+							<p class="text-center" style="opacity:0">
 								<?php echo $contentText['five']['title'] ?>
 							</p>
 						</div>

@@ -83,6 +83,7 @@ function footerPHP($ruta ,$page){
 	  </div>
 	</div>
 
+	<button class="btn background-red" id="btn-up" onclick="upScroll();"><i class="icon-up-open-mini"></i></button>
 	<section  class="p-4 background-white" id="contact">
 		<div class="container">
 			<div class="container-fluid">
@@ -121,10 +122,10 @@ function footerPHP($ruta ,$page){
 					</div>
 					<div class="col-12 col-md-6">
 						<ul class="d-flex icons">
-							<li><img src="<?php echo $ruta?>dist/img/ico1.png" alt="ico_dacapri"></li>
-							<li><img src="<?php echo $ruta?>dist/img/ico2.png" alt="ico_dacapri"></li>
-							<li><img src="<?php echo $ruta?>dist/img/ico3.png" alt="ico_dacapri" onclick="window.location = 'https://www.instagram.com/dacapri_/'"></li>
-							<li><img src="<?php echo $ruta?>dist/img/ico4.png" alt="ico_dacapri" onclick="window.lcation = 'https://www.facebook.com/DaCapri-462358184332028'"></li>
+							<li><img src="<?php echo $ruta?>dist/img/ico1.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.youtube.com/channel/UCAHskvOVpuipdV_ourx1-qA'"></li>
+							<li><img src="<?php echo $ruta?>dist/img/ico2.png" class="icon" alt="ico_dacapri"></li>
+							<li><img src="<?php echo $ruta?>dist/img/ico3.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.instagram.com/dacapri_/'"></li>
+							<li><img src="<?php echo $ruta?>dist/img/ico4.png" class="icon" alt="ico_dacapri" onclick="window.lcation = 'https://www.facebook.com/DaCapri-462358184332028'"></li>
 						</ul>
 					</div>
 				</div>
@@ -137,12 +138,15 @@ function footerPHP($ruta ,$page){
 							<li>
 								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (954) 330-9260</p>
 							</li>
+							<li class="d-block d-md-none">
+								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (954) 330-9260</p>
+							</li>
 						</ul>
 					</div>
 					<div class="col-12 col-md-6">
 						<ul>
 							<li></li>
-							<li>
+							<li class="d-none d-md-block">
 								<p class="d-block" style="float:right;"><span class="icon-mail"></span> <?php echo $contextText['followus']['network']['email']?> info@dacaprifactory.com</p>
 							</li>
 						</ul>
@@ -154,7 +158,7 @@ function footerPHP($ruta ,$page){
 	</footer>
 
 	<script src="<?php echo $ruta?>dist/js/loading.js"></script>
-	<script src="<?php echo $ruta ?>dist/js/jquery-3.3.1.min.js"></script>
+	
 	<script src="<?php echo $ruta?>dist/js/pages/footer.js"></script>
 
 

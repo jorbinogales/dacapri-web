@@ -10,9 +10,14 @@
 	animation: transition-image-third 3s ease-in-out forwards;
 }
 
+
 .transition-top{
-	position:relative !important;
 	animation: transition-top 1s ease-in-out forwards;
+}
+
+.transition-right{
+	position:relative !important;
+	animation: transition-right 1s ease-in-out forwards;
 }
 
 .transition-bottom{
@@ -20,6 +25,22 @@
 	animation: transition-bottom 1s ease-in-out forwards;
 }
 
+.transition-zoom{
+	position:relative;
+	animation: transition-zoom 1s ease-in-out forwards;
+	opacity: 1 !important;
+}
+
+@keyframes transition-zoom{
+	from{
+		transform: scale(0);
+		opacity: 0;
+	}
+	to{
+		transform:scale(1);
+		opacity: 1 !important;
+	}
+}
 @keyframes transition-top{
 	from{
 		opacity: 0;
@@ -28,6 +49,17 @@
 	to{
 		opacity: 1;
 		transform: translateY(0%);
+	}
+}
+
+@keyframes transition-right{
+	from{
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
 	}
 }
 

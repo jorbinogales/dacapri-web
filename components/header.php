@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/<?php echo $page?>.css">
 	<!-- LOADING  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/loading.css">
+	<script src="<?php echo $ruta ?>dist/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 

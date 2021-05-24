@@ -12,9 +12,9 @@ $('.star').on('mouseenter', function(event){
 })
 
 $(document).ready(function() {
-  var image = document.querySelector('#image-1');
+  var image = document.querySelector('#image_1');
   console.log(image);
-  if(image != null){
+  	if(image != null){
   		$('#image_1').addClass('transition-image-1');
   		$('#image_2').addClass('transition-image-2');
   		$('#image_3').addClass('transition-image-3');
@@ -37,3 +37,16 @@ $('#formContact').submit(function(e){
 	})
 })
 
+$(window).scroll(function(){
+	if(window.scrollY >= 50){
+		$('#btn-up').css({'display':'block'});
+		$('#btn-up').addClass('transition-top');
+	} else {
+		$('#btn-up').css({'display':'none'});
+		$('#btn-uo').removeClass('transition-top');
+	}
+});
+
+function upScroll(){
+	$('body,html').animate({scrollTop: '0px'}, 500);
+}

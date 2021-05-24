@@ -116,7 +116,7 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="icon-shopping-cart"></span></a>
+                        <a class="nav-link" href="https://dacaprifactory.com/cart"><span class="icon-shopping-cart"></span></a>
                       </li>
                     </ul>
               </div>
