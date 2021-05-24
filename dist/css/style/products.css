@@ -20,6 +20,13 @@
 	margin:auto;
 }
 
+#inCategory{
+	font-size:50px;
+	font-family: 'Smith';
+	text-align: center;
+	display: block;
+}
+
 .list-bg,
 .card-border{
 	border-radius:30px;

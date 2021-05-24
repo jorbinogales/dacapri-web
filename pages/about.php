@@ -10,19 +10,18 @@
 				'target' => array(
 					0 => 'C O N F I D E N C E',
 					1 => 'Integrity',
-					2 => 'P A S S I Ó N',
+					2 => 'P A S S I O N',
 					3 => 'Competitiveness',
 					4 => 'E X C E L L E N C E',
 					5 => 'Transparency',
 					6 => 'L O Y A L T Y',
 					7 =>  'Innovation'
 				),
-				'text' => 	'We are a family food products company of Italian origin 
-							founded in 2018 and located in South Florida in the United States of America.
-							We are known for making pasta of vegan origin, handmade, natural without any addictive or 
-				 			chemical and with high quality ingredients, made with bronze molds, slow drying, based on
-				  			culinary techniques of Italian tradition, being nutritious and good for the health of the 
-				  			whole family',
+				'text' => 	'We are known for making pasta of vegan origin,
+							handmade, natural, without any additive or chemicals and with high 
+							quality ingredients. Made with bronze molds and slow drying, based on 
+							culinary techniques of Italian tradition, 
+							being nutritious and good for the health of the whole family.',
 			),
 			'banner' => array(
 				'title' => 'Our <br> Story',
@@ -50,26 +49,18 @@
 			),
 			'mission' => array(
 				'title' => 'Mission',
-				'text' =>'Provide quality products,
-							good taste and nutritious. Inspiring
-							moments of optimism and happiness
-							to a family table',
+				'text' =>	'To offer nutritious and tasty, quality products. 
+							Inspiring moments of happiness and optimism in every family table.',
 			),
 			'view' => array(
-				'title' => 'View',
-				'text' => 'Be the first food brand
-							vegan-sourced premium chosen
-							by the people in the market,
-							recognized for quality,
-							authentic taste of Italian,
-							operational and continuous excellence
-							innovation hand in hand with talent
-							of our people, guided by a
-							sustainable business model, which
-							know the importance of the planet
-							while sharing the
-							risk, profitability and maximizes
-							the return of its shareholders.',
+				'title' => 'Vision',
+				'text' => 'To be the first brand of premium vegan food chosen by the public,
+						 	distinguished for the quality, the authentic italian flavor, 
+						 	operational excellence and constant innovation, hand in hand
+						 	with the skills and talents of our people. Steered by a 
+						  	sustainable business model, that both understands the
+						  	significance of the planet and shares the risk, the
+						    profitability and maximizes the return of its shareholders.',
 			)
 		);
 

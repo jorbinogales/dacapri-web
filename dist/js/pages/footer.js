@@ -1,3 +1,5 @@
+
+var valuations; 
 $('.star').on('mouseenter', function(event){
 	var star = event.target.id;
 	var id = star.split("-");
@@ -11,6 +13,23 @@ $('.star').on('mouseenter', function(event){
 	}
 })
 
+$('.star').on('mouseleave', function(){
+	console.log(valuations);
+	for(var i = 0; i<valuations; i++){
+		$('#star-'+(i+1)).addClass('star-hover');
+	}
+	if(valuations == null || valuations == undefined){
+		for(var i = 0; i<5; i++){
+			$('#star-'+(i+1)).removeClass('star-hover');
+		}
+	}
+})
+
+function selStar(star){
+	valuations = star;
+	$('#valuationsFooter').val(star);
+}
+
 $(document).ready(function() {
   var image = document.querySelector('#image_1');
   console.log(image);
@@ -23,18 +42,31 @@ $(document).ready(function() {
 
 $('#formContact').submit(function(e){
 	e.preventDefault();
-	$.ajax({
-		url: 'http://api.dacaprifactory.net/api/contact/create',
-		type: 'post',
-		dataType: 'json',
-		data: $(this).serialize(),
-		success: function(resp){
-			var btn = document.querySelector('#registerBtn');
-			btn.click();
-		}
-	}).fail(function(resp){
+	var formValuations = document.getElementById('valuationsFooter');
+	if(formValuations.value != 0){
+		var btn = document.querySelector('#registerBtn');
+		btn.click();
+
+		valuations = null;
+		formValuations.value = 0;
+
+		$.ajax({
+			url: 'http://api.dacaprifactory.net/api/contact/create',
+			type: 'post',
+			dataType: 'json',
+			data: $(this).serialize(),
+			success: function(resp){
+				console.log(resp);
+			}
+		}).fail(function(resp){
+			console.log(resp);
+		})
+
+		$('#formContact').trigger("reset");
 		
-	})
+	} else {
+		alert('Te falta valorar por estrellas');
+	}
 })
 
 $(window).scroll(function(){

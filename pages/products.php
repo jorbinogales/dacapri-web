@@ -1,11 +1,19 @@
 <?php
 	function productsPage($ruta){
 		require 'components/product.php';
-		$products = allProducts();
-		$productsName = $products['name'];
+		require 'components/category.php';
 
+		$products = allProducts();
+		$category = allCategory();
+
+
+		$productsName = $products['name'];
 		$productsPrice = $products['price'];
 		$productsUrl = $products['url'];
+		$productsCategory = $products['category'];
+
+		$categoryName = $category['name'];
+		$categoryClass = $category['class'];
 ?>
 
 <?php 
@@ -50,17 +58,25 @@
 					<div class="h-100 list-btn">
 						<ul class="d-block scroll-spy p-0" style="z-index: 1000;">
 							<li>
-								<button type="button" class="btn background-white text-dark"><?php echo $contextText['products']['category'] ?></button>
+								<button type="button" 
+										class="btn background-white text-dark"
+										onclick="changeCategory('all')">
+										<?php echo $contextText['products']['category'] ?>
+								</button>
 							</li>
-							<li>
-								<button type="button" class="btn background-green">Fettuccine</button>
-							</li>
-							<li>
-								<button type="button" class="btn background-red">Fusilli</button>
-							</li>
-							<li>
-								<button type="button" class="btn background-black">Baked Pasta</button>
-							</li>
+							<?php
+								for($i = 0; $i<count($categoryName); $i++){
+									?>
+									<li>
+										<button type="button" 
+												class="btn <?php echo $categoryClass[$i] ?>" 
+												onclick="changeCategory('<?php echo $categoryName[$i]?>')">
+											<?php echo $categoryName[$i] ?>
+										</button>
+									</li>
+									<?php
+								}
+							?>
 						</ul>
 						<div class="card h-100 list-bg">
 							<div class="card-body h-100"></div>
@@ -68,11 +84,12 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-8">
+					<h3 id="inCategory"></h3>
 					<div class="row">
 						<?php 
 							for($i = 0; $i < count($productsName) ; $i++){
 						?>
-							<div class="col-6">
+							<div class="col-6 category <?php echo $productsCategory[$i] ?>">
 								<div class="card card-border card-item" onclick="window.location = '<?php echo $productsUrl[$i] ?>'">
 									<div class="card-body">
 										<img src="<?php echo $ruta?>dist/img/product<?php echo $i+1 ?>.png" class="w-100">

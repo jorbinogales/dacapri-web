@@ -21,15 +21,16 @@
 				),
 				1 => array(
 					'title' => 'How does the online <br> shop works?',
-					'resp' => 'You can buy them on our online
-								shop, through the “products” tab on
-								our web site or going to any of our
-								allies establishments. You can nd
-								the list of establishments that sell
-								our products here.'
+					'resp' => 'You go to the “products” tab on the site, 
+								when you have chosen your product, 
+								click on the “add to cart” button. 
+								Choose a payment method. 
+								And after you have payed, our 
+								sales department will verify and 
+								process your order.'
 				),
 				2 => array(
-					'title' => 'Which are the <br>payments Options?',
+					'title' => 'What are the<br> payment options?',
 					'resp' => 'When you have all you want in your
 								cart, you can choose to pay with
 								your credit card or via wire transfer
@@ -39,15 +40,14 @@
 					'title' => 'How can I buy<br>
 								Da Capri products if<br>
 								I am not in Miami?',
-					'resp' => 'You place your order through our
-								online shop and we arrange shipment with a delivery Company that
-								covers your location.'
+					'resp' => 'You order through our online shop and we arrange shipment with 
+								a delivery company that covers your location.'
 				),
 				4 => array(
-					'title' => 'What do I do if I whant to<br>
-		 						sell Da Capri products<br>
-								in my establishments<br>
-								become a supplier?',
+					'title' => ' What do I do if I want to <br>
+								sell Da Capri products<br>
+								 in my establishment <br>
+								 or become a supplier?',
 					'resp' => 'To become one of our allies you can
 								send an e-mail to info@dacaprifactory.com 
 								with your company’s information 

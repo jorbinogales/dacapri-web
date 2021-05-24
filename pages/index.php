@@ -13,44 +13,37 @@
 						be able to live without us"',
 			),
 			"third" => array(
-					'title' => 'What Make as Diferent',
+					'title' => 'What Make us Diferent',
 			),
 			"four" => array(
 					'title' => array(
 						0 => 'Vegan <br>for Foodies',
-						1 => 'Make <br>with Traditions',
-						2 => 'Quality <br>ingredients'
+						1 => 'Made <br>with Traditions',
+						2 => 'Quality <br>Ingredients'
 					),
 					'descriptions' => array(
-						0 => 'Our pasta is made with a
-							combination of semolina which
-							and vegetables, to give them
-							include eggs in the mixture it
-							is 100% vegan.<br><br>
-							We are really happy to be
-							delicious vegan dish to your
-							table.',
-						1 => 'We are proud to say we are
-							italians, and so, we have learned
-							to make pasta from our homes,
-							at our parents pasta factories,
-							up until we brought them to
-							our own pasta factories.<br><br>
-							Carrying our traditions through
-							our hands and ingredients in
-							order to bring you the original
-							generations',
-						2 => 'To make sure we are bringing
-							you the most nutritious and
-							tasty products we have to be
-							very careful with the
-							ingredients we choose.<br><br>
-							That is why we keep it natural
-							and fresh. The vegetables we
-							use are the key to a great pasta
-							and you can choose between
-							beet, carrot, tomato, spinach
-							or traditional semolina pasta.'
+						0 => 'Our pasta is made with a combination of semolina 
+							  which is a type of wheat flour,
+						      water and vegetables, to give them color and flavor. 
+						      As it doesn’t include eggs in the mixture it is 100% 
+						      vegan.<br><br>
+							 
+							  We are really happy to be able to bring a different and delicious vegan dish
+							  to your table.',
+						1 => 'We are proud to say we are italians, and so,
+							  we have learned to make pasta from our homes, to our parents
+							  pasta factories, up until we brought them to our own pasta factories.<br><br>
+
+							  Carrying our traditions through our hands and ingredients 
+							  in order to bring you the original italian flavor, passed on
+							  through generations.',
+						2 => 'To make sure we bring the most nutritious and 
+							  tasty products to your table, we have to be 
+							  very careful with the ingredients we choose.<br><br>
+
+							  That is why we keep it fresh and natural. The vegetables we use are the
+							  key to a great pasta and you can choose between beet, carrot,
+							  tomato, spinach or traditional semolina pasta.'
 					)
 			),
 			"five" => array(
@@ -162,15 +155,15 @@
 
 						<!-- Full-width images with number and caption text -->
 							<div class="mySlides fade" id="mySlides_1">
-								<img src="<?php echo $ruta ?>dist/img/slider1.png">
+								<img src="<?php echo $ruta ?>dist/img/product7.png">
 							</div>
 
 							<div class="mySlides fade" id="mySlides_2">
-								<img src="<?php echo $ruta?>dist/img/slider2.png">
+								<img src="<?php echo $ruta?>dist/img/product8.png">
 							</div>
 
 							<div class="mySlides fade" id="mySlides_3">
-								<img src="<?php echo $ruta?>dist/img/slider3.png">
+								<img src="<?php echo $ruta?>dist/img/product9.png">
 								
 							</div>
 

@@ -90,21 +90,38 @@ function footerPHP($ruta ,$page){
 				<p class="text-center"><?php echo $contextText['contact']['title']?></p>
 			</div>
 			<ul class="d-flex">
-				<li><span class="star icon-star-1" id="star-1"></span></li>
-				<li><span class="star icon-star-1" id="star-2"></span></li>
-				<li><span class="star icon-star-1" id="star-3"></span></li>
-				<li><span class="star icon-star-1" id="star-4"></span></li>
-				<li><span class="star icon-star-1" id="star-5"></span></li>
+				<?php 
+					for($i = 0; $i<5; $i++){
+				?>
+					<li><span class="star icon-star-1" id="star-<?php echo $i+1 ?>" onclick="selStar('<?php echo $i+1 ?>')"></span></li>
+				<?php
+					}
+				?>
 			</ul>
 			<form method="post" id="formContact">
+				<input type="hidden" name="valuations" value="0" id="valuationsFooter">
 				<div class="form-group">
-					<input type="text" class="form-control" name="name" placeholder="<?php echo $contextText['contact']['form']['name'] ?>" required>
+					<input type="text" 
+						   class="form-control" 
+						   id="nameForm" 
+						   name="name" 
+						   placeholder="<?php echo $contextText['contact']['form']['name'] ?>" 
+						   required>
 				</div>
 				<div class="form-group">
-					<input type="email" class="form-control" name="email" placeholder="<?php echo $contextText['contact']['form']['email'] ?>" required>
+					<input type="email" 
+						   class="form-control" 
+						   name="email" 
+						   id="emailForm"
+						   placeholder="<?php echo $contextText['contact']['form']['email'] ?>" 
+						   required>
 				</div>
 				<div class="form-group">
-					<textarea class="form-control" placeholder="<?php echo $contextText['contact']['form']['message'] ?>" name="message" required></textarea>
+					<textarea class="form-control" 
+							  placeholder="<?php echo $contextText['contact']['form']['message'] ?>" 
+							  id="textareaForm"
+							  name="message" 
+							  required></textarea>
 				</div>
 				<input type="submit" class="btn btnb-block w-100 background-green text-white" value="<?php echo $contextText['contact']['form']['submit'] ?>">
 			</form>
@@ -123,7 +140,6 @@ function footerPHP($ruta ,$page){
 					<div class="col-12 col-md-6">
 						<ul class="d-flex icons">
 							<li><img src="<?php echo $ruta?>dist/img/ico1.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.youtube.com/channel/UCAHskvOVpuipdV_ourx1-qA'"></li>
-							<li><img src="<?php echo $ruta?>dist/img/ico2.png" class="icon" alt="ico_dacapri"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico3.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.instagram.com/dacapri_/'"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico4.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.facebook.com/DaCapri-462358184332028'"></li>
 						</ul>
