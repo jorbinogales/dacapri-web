@@ -57,76 +57,76 @@ function footerPHP($ruta ,$page){
 		}
 	?>
 
-
-
-	<!-- Button trigger modal -->
-	<button type="button" class="d-none btn btn-primary" data-toggle="modal" data-target="#registerModal" id="registerBtn">
-	</button>
-	<!-- Modal -->
-	<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLongTitle">
-		        	<?php echo $contextText['modal']['title'] ?>
-		        </h5>
-	      </div>
-	      <div class="modal-body">
-	       		<?php echo $contextText['modal']['text'] ?>
-	      </div>
-	      <div class="modal-footer">
-		        <button type="button" class="btn btn-success" data-dismiss="modal">
-		        	<?php echo $contextText['modal']['button'] ?>
-		        </button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<button class="btn background-red" id="btn-up" onclick="upScroll();"><i class="icon-up-open-mini"></i></button>
-	<section  class="p-4 background-white" id="contact">
-		<div class="container">
-			<div class="container-fluid">
-				<p class="text-center"><?php echo $contextText['contact']['title']?></p>
+	<?php if(isset($_GET['page']) && $_GET['page'] != 'about'){ ?>
+		<!-- Button trigger modal -->
+		<button type="button" class="d-none btn btn-primary" data-toggle="modal" data-target="#registerModal" id="registerBtn">
+		</button>
+		<!-- Modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">
+						<?php echo $contextText['modal']['title'] ?>
+					</h5>
 			</div>
-			<ul class="d-flex">
-				<?php 
-					for($i = 0; $i<5; $i++){
-				?>
-					<li><span class="star icon-star-1" id="star-<?php echo $i+1 ?>" onclick="selStar('<?php echo $i+1 ?>')"></span></li>
-				<?php
-					}
-				?>
-			</ul>
-			<form method="post" id="formContact">
-				<input type="hidden" name="valuations" value="0" id="valuationsFooter">
-				<div class="form-group">
-					<input type="text" 
-						   class="form-control" 
-						   id="nameForm" 
-						   name="name" 
-						   placeholder="<?php echo $contextText['contact']['form']['name'] ?>" 
-						   required>
-				</div>
-				<div class="form-group">
-					<input type="email" 
-						   class="form-control" 
-						   name="email" 
-						   id="emailForm"
-						   placeholder="<?php echo $contextText['contact']['form']['email'] ?>" 
-						   required>
-				</div>
-				<div class="form-group">
-					<textarea class="form-control" 
-							  placeholder="<?php echo $contextText['contact']['form']['message'] ?>" 
-							  id="textareaForm"
-							  name="message" 
-							  required></textarea>
-				</div>
-				<input type="submit" class="btn btnb-block w-100 background-green text-white" value="<?php echo $contextText['contact']['form']['submit'] ?>">
-			</form>
+			<div class="modal-body">
+					<?php echo $contextText['modal']['text'] ?>
+			</div>
+			<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">
+						<?php echo $contextText['modal']['button'] ?>
+					</button>
+			</div>
+			</div>
 		</div>
-	</section>
+		</div>
+
+		<button class="btn background-red" id="btn-up" onclick="upScroll();"><i class="icon-up-open-mini"></i></button>
+		<section  class="p-4 background-white" id="contact">
+			<div class="container">
+				<div class="container-fluid">
+					<p class="text-center"><?php echo $contextText['contact']['title']?></p>
+				</div>
+				<ul class="d-flex">
+					<?php 
+						for($i = 0; $i<5; $i++){
+					?>
+						<li><span class="star icon-star-1" id="star-<?php echo $i+1 ?>" onclick="selStar('<?php echo $i+1 ?>')"></span></li>
+					<?php
+						}
+					?>
+				</ul>
+				<form method="post" id="formContact">
+					<input type="hidden" name="valuations" value="0" id="valuationsFooter">
+					<div class="form-group">
+						<input type="text" 
+							class="form-control" 
+							id="nameForm" 
+							name="name" 
+							placeholder="<?php echo $contextText['contact']['form']['name'] ?>" 
+							required>
+					</div>
+					<div class="form-group">
+						<input type="email" 
+							class="form-control" 
+							name="email" 
+							id="emailForm"
+							placeholder="<?php echo $contextText['contact']['form']['email'] ?>" 
+							required>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" 
+								placeholder="<?php echo $contextText['contact']['form']['message'] ?>" 
+								id="textareaForm"
+								name="message" 
+								required></textarea>
+					</div>
+					<input type="submit" class="btn btnb-block w-100 background-green text-white" value="<?php echo $contextText['contact']['form']['submit'] ?>">
+				</form>
+			</div>
+		</section>
+	<?php } ?>
 	
 	<footer class="background-white">
 		<div class="container">

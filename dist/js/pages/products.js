@@ -20,10 +20,10 @@ $(document).ready(function(){
 })
 
 function changeCategory(categoryName){
+	hiddenAll();
 	if(categoryName == 'all'){
 		showAll();
 	} else {
-		hiddenAll();
 		showCategory(categoryName);
 	}
 	nameCategory(categoryName);

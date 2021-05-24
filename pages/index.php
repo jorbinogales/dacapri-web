@@ -13,7 +13,7 @@
 						be able to live without us"',
 			),
 			"third" => array(
-					'title' => 'What Make us Diferent',
+					'title' => 'What Makes us Diferent',
 			),
 			"four" => array(
 					'title' => array(
@@ -57,11 +57,11 @@
 			$contentText = array(
 				"first" => array(
 					'title' => 'ARTESANAL, VEGANA',
-					'description' => 'Pasta tradicional Vegana<br>y más... ',
+					'description' => 'Pasta tradicional Italiana<br>y más... ',
 					'button' => 'EXPLORA NUESTROS PRODUCTOS'
 				),
 				"second" => array(
-					'title' => '"Cuando nos pruebes, no podras<br>
+					'title' => '"Cuando nos pruebes, no podrás<br>
 							vivir sin nosotros"',
 				),
 				"third" => array(
