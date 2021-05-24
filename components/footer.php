@@ -125,7 +125,7 @@ function footerPHP($ruta ,$page){
 							<li><img src="<?php echo $ruta?>dist/img/ico1.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.youtube.com/channel/UCAHskvOVpuipdV_ourx1-qA'"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico2.png" class="icon" alt="ico_dacapri"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico3.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.instagram.com/dacapri_/'"></li>
-							<li><img src="<?php echo $ruta?>dist/img/ico4.png" class="icon" alt="ico_dacapri" onclick="window.lcation = 'https://www.facebook.com/DaCapri-462358184332028'"></li>
+							<li><img src="<?php echo $ruta?>dist/img/ico4.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.facebook.com/DaCapri-462358184332028'"></li>
 						</ul>
 					</div>
 				</div>
