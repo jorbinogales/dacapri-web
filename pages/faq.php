@@ -217,10 +217,25 @@
 				</div>
 				<div class="col-12 col-md-6">
 					<div class="text">
-						<img class="transition-top"src="<?php echo $ruta?>dist/img/logo.png" alt="logo_dacapri">
-						<h2 class="transition-top"><?php echo $contextText['top']['title'] ?></h2>
-						<h3 class="transition-bottom"><?php echo $contextText['top']['subtitle'] ?></h3>
-						<a href="https://dacaprifactory.com/" class="btn background-white transition-bottom"><?php echo $contextText['top']['button'] ?></a>
+						<img 
+							class="transition-top"
+							src="<?php echo $ruta?>dist/img/logo.png" 
+							alt="logo_dacapri"
+						>
+						<h2 
+							class="transition-top"
+						>
+							<?php echo $contextText['top']['title'] ?></h2>
+						<h3 
+							class="transition-bottom"
+						>
+							<?php echo $contextText['top']['subtitle'] ?>
+						</h3>
+						<a 	href="https://dacaprifactory.com/" 
+							class="btn background-white transition-bottom"
+						>
+							<?php echo $contextText['top']['button'] ?>
+						</a>
 					</div>
 				</div>
 			</div>

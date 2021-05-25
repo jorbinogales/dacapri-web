@@ -80,5 +80,5 @@ $(window).scroll(function(){
 });
 
 function upScroll(){
-	$('body,html').animate({scrollTop: '0px'}, 500);
+	$('body,html').animate({scrollTop: '0px'}, 0);
 }

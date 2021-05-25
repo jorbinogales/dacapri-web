@@ -134,7 +134,7 @@
 					<div class="col-12 col-md-6">
 						<div class="text text-center">
 							<p class="transition-top"><?php echo $contentText['first']['title'] ?></p>
-							<span class="transition-top"><?php echo $contentText['first']['description'] ?></span>
+							<h1 class="transition-top"><?php echo $contentText['first']['description'] ?></h1>
 							<a type="button" class="transition-bottom btn background-transparent m-auto d-block mt-5" href="https://dacaprifactory.com/">
 								<?php echo $contentText['first']['button'] ?>
 							</a>

@@ -77,14 +77,14 @@
 	right:0;
 	margin:auto;
 	z-index: 1;
-	transform: scale(1.5);
+	transform: scale(1.6);
 }
 
 #body .row h4{
 	position:relative;
 	font-family: 'Smith';
 	text-align: center;
-	padding: 20px 30px 20px 30px;
+	padding: 20px 40px 20px 40px;
 	z-index: 10;
 }
 

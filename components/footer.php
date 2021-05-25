@@ -81,8 +81,6 @@ function footerPHP($ruta ,$page){
 			</div>
 		</div>
 		</div>
-
-		<button class="btn background-red" id="btn-up" onclick="upScroll();"><i class="icon-up-open-mini"></i></button>
 		<section  class="p-4 background-white" id="contact">
 			<div class="container">
 				<div class="container-fluid">
@@ -127,6 +125,8 @@ function footerPHP($ruta ,$page){
 			</div>
 		</section>
 	<?php } ?>
+	
+	<button class="btn background-red" id="btn-up" onclick="upScroll();"><i class="icon-up-open-mini"></i></button>
 	
 	<footer class="background-white">
 		<div class="container">
