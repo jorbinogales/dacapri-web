@@ -139,7 +139,7 @@ function footerPHP($ruta ,$page){
 					</div>
 					<div class="col-12 col-md-6">
 						<ul class="d-flex icons">
-							<li><img src="<?php echo $ruta?>dist/img/ico1.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.youtube.com/channel/UCAHskvOVpuipdV_ourx1-qA'"></li>
+							<li><img src="<?php echo $ruta?>dist/img/ico1.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.youtube.com/channel/UCo-xrlm8f8yIeXD41P9kddg'"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico3.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.instagram.com/dacapri_/'"></li>
 							<li><img src="<?php echo $ruta?>dist/img/ico4.png" class="icon" alt="ico_dacapri" onclick="window.location = 'https://www.facebook.com/DaCapri-462358184332028'"></li>
 						</ul>
@@ -149,13 +149,13 @@ function footerPHP($ruta ,$page){
 					<div class="col-12 col-md-6">
 						<ul>
 							<li>
-								<p><span class="icon-phone"></span> <?php echo $contextText['followus']['network']['number']?> +1 (754) 946-1342</p>
+								<p><span class="icon-phone"></span> <?php echo $contextText['followus']['network']['number']?> +1 (305) 603-7145</p>
 							</li>
 							<li>
-								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (754) 946-1342</p>
+								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (305) 603-7145</p>
 							</li>
 							<li class="d-block d-md-none">
-								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (754) 946-1342</p>
+								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (305) 603-7145</p>
 							</li>
 						</ul>
 					</div>

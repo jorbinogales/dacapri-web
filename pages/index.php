@@ -155,17 +155,29 @@
 
 						<!-- Full-width images with number and caption text -->
 							<div class="mySlides fade" id="mySlides_1">
-								<img src="<?php echo $ruta ?>dist/img/product7.png">
+								<img src="<?php echo $ruta ?>dist/img/product1.png">
 							</div>
 
 							<div class="mySlides fade" id="mySlides_2">
-								<img src="<?php echo $ruta?>dist/img/product8.png">
+								<img src="<?php echo $ruta?>dist/img/product2.png">
 							</div>
 
 							<div class="mySlides fade" id="mySlides_3">
-								<img src="<?php echo $ruta?>dist/img/product9.png">
-								
+								<img src="<?php echo $ruta?>dist/img/product3.png">
 							</div>
+
+							<div class="mySlides fade" id="mySlides_4">
+								<img src="<?php echo $ruta?>dist/img/product4.png">
+							</div>
+
+							<div class="mySlides fade" id="mySlides_5">
+								<img src="<?php echo $ruta?>dist/img/product5.png">
+							</div>
+							
+							<div class="mySlides fade" id="mySlides_6">
+								<img src="<?php echo $ruta?>dist/img/product6.png">
+							</div>
+
 
 							<!-- Next and previous buttons -->
 							<a class="prev" onclick="plusSlides(-1)" style="text-decoration:none;">&#10094;</a>
@@ -177,6 +189,9 @@
 							<span class="dot" id="dot_1" onclick="currentSlide(1)"></span>
 							<span class="dot" id="dot_2" onclick="currentSlide(2)"></span>
 							<span class="dot" id="dot_3" onclick="currentSlide(3)"></span>
+							<span class="dot" id="dot_4" onclick="currentSlide(4)"></span>
+							<span class="dot" id="dot_5" onclick="currentSlide(5)"></span>
+							<span class="dot" id="dot_6" onclick="currentSlide(6)"></span>
 						</div>
 						<p class="text text-center"><?php echo $contentText['second']['title'] ?></p>
 					</div>

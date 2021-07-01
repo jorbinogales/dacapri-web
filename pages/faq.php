@@ -15,7 +15,7 @@
 					'resp' => 'You can buy them on our online
 								shop, through the “products” tab on
 								our web site or going to any of our
-								allies establishments. You can nd
+								allies establishments. You can find
 								the list of establishments that sell
 								our products here.'
 				),

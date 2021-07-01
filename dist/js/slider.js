@@ -5,7 +5,7 @@ var dots = [];
 
 
 $(document).ready(function(){
-    for(var i = 0; i<3; i++){
+    for(var i = 0; i<6; i++){
         slides[i] = document.getElementById("mySlides_"+(i+1));
         dots[i] = document.getElementById('dot_'+(i+1));
     }

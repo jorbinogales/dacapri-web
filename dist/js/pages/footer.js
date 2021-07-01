@@ -1,4 +1,6 @@
 
+const API_URL = 'http://127.0.0.1:8000/api/contact/create/';
+
 var valuations; 
 $('.star').on('mouseenter', function(event){
 	var star = event.target.id;
@@ -23,7 +25,7 @@ $('.star').on('mouseleave', function(){
 			$('#star-'+(i+1)).removeClass('star-hover');
 		}
 	}
-})
+});
 
 function selStar(star){
 	valuations = star;
