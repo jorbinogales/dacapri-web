@@ -95,7 +95,7 @@ function footerPHP($ruta ,$page){
 						}
 					?>
 				</ul>
-				<form method="post" id="formContact">
+				<form method="post" id="formContact" onsubmit="contactSubmit(event)">
 					<input type="hidden" name="valuations" value="0" id="valuationsFooter">
 					<div class="form-group">
 						<input type="text" 

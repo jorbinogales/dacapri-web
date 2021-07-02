@@ -1,5 +1,5 @@
 
-const API_URL = 'http://application.dacaprifactory.net/public/api/contact/create';
+const API_URL = 'http://application.dacaprifactory.net/public/api/';
 
 var valuations; 
 $('.star').on('mouseenter', function(event){
@@ -41,35 +41,6 @@ $(document).ready(function() {
 	}
 });
 
-$('#formContact').submit(function(e){
-	e.preventDefault();
-	var formValuations = document.getElementById('valuationsFooter');
-	if(formValuations.value != 0){
-		var btn = document.querySelector('#registerBtn');
-		btn.click();
-
-		valuations = null;
-		formValuations.value = 0;
-
-		$.ajax({
-			url: API_URL,
-			type: 'post',
-			dataType: 'json',
-			data: $(this).serialize(),
-			success: function(resp){
-				console.log(resp);
-			}
-		}).fail(function(resp){
-			console.log(resp);
-		})
-
-		$('#formContact').trigger("reset");
-		
-	} else {
-		alert('Te falta valorar por estrellas');
-	}
-})
-
 $(window).scroll(function(){
 	if(window.scrollY >= 50){
 		$('#btn-up').css({'display':'block'});
@@ -85,20 +56,28 @@ function upScroll(){
 }
 
 const contactSubmit = (e) => {
+
 	e.preventDefault();
+
+	let form = document.querySelector('#'+e.target.id);
+	formData = new FormData(form);
+
+	var formValuations = document.getElementById('valuationsFooter');
 	
 	if(formValuations.value != 0){
+
 		var btn = document.querySelector('#registerBtn');
 		btn.click();
 		valuations = null;
 		formValuations.value = 0;
 
-		axios.post('/login', $(this).serialize())
-		  .then((response) => {
+		axios.post(API_URL + 'contact/create', formData)
+        .then(response =>{
 			console.log(response);
-		}, (error) => {
-			console.log(error);
-		});
+        })
+        .catch( error => {
+            console.log(error);  
+        });
 
 		$('#formContact').trigger("reset");
 		
@@ -106,10 +85,3 @@ const contactSubmit = (e) => {
 		alert('Te falta valorar por estrellas');
 	}
 }
-
-try{
-	document.getElementById('#formContact').addEventListener('submit',function(event){ contactSubmit(event) });
-} catch {
-
-}
-
