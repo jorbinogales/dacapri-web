@@ -108,7 +108,7 @@ const contactSubmit = (e) => {
 }
 
 try{
-	document.getElementById('#formContact').addEventListener('submit',function(event){ contactSubmit(e) });
+	document.getElementById('#formContact').addEventListener('submit',function(event){ contactSubmit(event) });
 } catch {
 
 }
