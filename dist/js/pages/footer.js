@@ -83,3 +83,33 @@ $(window).scroll(function(){
 function upScroll(){
 	$('body,html').animate({scrollTop: '0px'}, 0);
 }
+
+const contactSubmit = (e) => {
+	e.preventDefault();
+	
+	if(formValuations.value != 0){
+		var btn = document.querySelector('#registerBtn');
+		btn.click();
+		valuations = null;
+		formValuations.value = 0;
+
+		axios.post('/login', $(this).serialize())
+		  .then((response) => {
+			console.log(response);
+		}, (error) => {
+			console.log(error);
+		});
+
+		$('#formContact').trigger("reset");
+		
+	} else {
+		alert('Te falta valorar por estrellas');
+	}
+}
+
+try{
+	document.getElementById('#formContact').addEventListener('submit',function(event){ contactSubmit(e) });
+} catch {
+
+}
+
