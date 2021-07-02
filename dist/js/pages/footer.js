@@ -1,5 +1,5 @@
 
-const API_URL = 'http://127.0.0.1:8000/api/contact/create/';
+const API_URL = 'http://application.dacaprifactory.net/public/api/contact/create';
 
 var valuations; 
 $('.star').on('mouseenter', function(event){
@@ -16,7 +16,6 @@ $('.star').on('mouseenter', function(event){
 })
 
 $('.star').on('mouseleave', function(){
-	console.log(valuations);
 	for(var i = 0; i<valuations; i++){
 		$('#star-'+(i+1)).addClass('star-hover');
 	}
@@ -53,7 +52,7 @@ $('#formContact').submit(function(e){
 		formValuations.value = 0;
 
 		$.ajax({
-			url: 'http://api.dacaprifactory.net/api/contact/create',
+			url: API_URL,
 			type: 'post',
 			dataType: 'json',
 			data: $(this).serialize(),
