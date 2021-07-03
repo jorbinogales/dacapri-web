@@ -163,7 +163,7 @@ function footerPHP($ruta ,$page){
 						<ul>
 							<li></li>
 							<li class="d-none d-md-block">
-								<p class="d-block" style="float:right;"><span class="icon-mail"></span> <?php echo $contextText['followus']['network']['email']?> info@dacaprifactory.com</p>
+								<p class="d-block" style="float:right;"><span class="icon-mail"></span> <?php echo $contextText['followus']['network']['email']?> info@dacaprifactory.net</p>
 							</li>
 						</ul>
 					</div>

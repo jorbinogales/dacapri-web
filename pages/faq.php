@@ -17,7 +17,7 @@
 								our web site or going to any of our
 								allies establishments. You can find
 								the list of establishments that sell
-								our products here.'
+								our products <a href="dist/files/dacapri.pdf">here.</a>'
 				),
 				1 => array(
 					'title' => 'How does the online <br> shop works?',
@@ -114,7 +114,8 @@
 							'resp' => 'Los puedes adquirir en nuestra
 										tienda virtual, ingresando en la
 										pestaña “productos” en nuestra
-										página web o acudiendo a cualquiera de nuestros puntos de ventas aliados, la lista de establecimientos la puedes conseguir aqui.'
+										página web o acudiendo a cualquiera de nuestros puntos de ventas aliados, 
+										la lista de establecimientos la puedes conseguir <a href="dist/files/dacapri.pdf">aqui.</a>'
 						),
 						1 => array(
 							'title' => '¿Cómo comprar en la <br> tienda virtual Da Capri?',
