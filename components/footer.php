@@ -151,11 +151,11 @@ function footerPHP($ruta ,$page){
 							<li>
 								<p><span class="icon-phone"></span> <?php echo $contextText['followus']['network']['number']?> +1 (305) 603-7145</p>
 							</li>
-							<li>
-								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (305) 603-7145</p>
+							<li class="d-none d-md-block">
+								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (754) 946-1342</p>
 							</li>
 							<li class="d-block d-md-none">
-								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (305) 603-7145</p>
+								<p><span class="icon-whatsapp"></span> <?php echo $contextText['followus']['network']['whatsapp']?> +1 (754) 946-1342</p>
 							</li>
 						</ul>
 					</div>
