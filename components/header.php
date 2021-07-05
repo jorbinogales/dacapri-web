@@ -18,11 +18,21 @@
 	<!-- LOADING  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $ruta?>dist/css/style/loading.css">
 	<script src="<?php echo $ruta ?>dist/js/jquery-3.3.1.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0CE3Z1ZR5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0CE3Z1ZR5');
+	</script>
 </head>
 <body>
+
 
 	<!-- Loading HTML -->
 	<div class="loading show">
 	    <div class="spin"></div>
 	</div>
+
 <?php } ?>
