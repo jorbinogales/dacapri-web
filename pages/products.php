@@ -8,7 +8,6 @@
 
 
 		$productsName = $products['name'];
-		$productsPrice = $products['price'];
 		$productsUrl = $products['url'];
 		$productsCategory = $products['category'];
 
@@ -90,11 +89,10 @@
 							for($i = 0; $i < count($productsName) ; $i++){
 						?>
 							<div class="col-6 category <?php echo $productsCategory[$i] ?>">
-								<div class="card card-border card-item" onclick="window.location = '<?php echo $productsUrl[$i] ?>'">
+								<div class="card card-border card-item" onclick="window.location = '<?php echo $productsUrl ?>'">
 									<div class="card-body">
 										<img src="<?php echo $ruta?>dist/img/product<?php echo $i+1 ?>.png" class="w-100">
 										<p><?php echo $productsName[$i] ?></p>
-										<span><?php echo $productsPrice[$i]?></span>
 										<div class="row card_footer p-0">
 											<div class="col-12">
 												<a type="button" class="text-dark btn btn-card
