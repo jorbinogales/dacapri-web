@@ -71,7 +71,7 @@ const contactSubmit = (e) => {
 		valuations = null;
 		formValuations.value = 0;
 
-		axios.post(API_URL + 'contact/create', formData)
+		axios.post(API_URL + 'contact/', formData)
         .then(response =>{
 			console.log(response);
         })
