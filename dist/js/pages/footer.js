@@ -1,5 +1,5 @@
 
-const API_URL = 'http://application.dacaprifactory.net/public/api/';
+const API_URL = 'https://api.dacaprifactory.net/public/api/';
 
 var valuations; 
 $('.star').on('mouseenter', function(event){
