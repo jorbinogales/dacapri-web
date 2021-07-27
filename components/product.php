@@ -14,7 +14,7 @@
 				'Baked Pasta Rosso Pomodoro'
 			];
 
-	$url = 'https://dacaprifactory.com';
+	$url = 'https://shop.dacaprifactory.com';
 
 	$category = [
 		'Fettuccine',
