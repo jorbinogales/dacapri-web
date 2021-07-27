@@ -163,7 +163,7 @@ function footerPHP($ruta ,$page){
 						<ul>
 							<li></li>
 							<li class="d-none d-md-block">
-								<a class="d-block" href="info@dacaprifactory.com">Clicka para enviar email a un destinatario</a>
+								<a class="d-block" href="info@dacaprifactory.com" style="text-decoration: none"><p>info@dacaprifactory.com</p></a>
 							</li>
 						</ul>
 					</div>
