@@ -163,7 +163,7 @@ function footerPHP($ruta ,$page){
 						<ul>
 							<li></li>
 							<li class="d-none d-md-block">
-								<p class="d-block" style="float:right;"><span class="icon-mail"></span> <?php echo $contextText['followus']['network']['email']?> info@dacaprifactory.net</p>
+								<a class="d-block" href="info@dacaprifactory.com">Clicka para enviar email a un destinatario</a>
 							</li>
 						</ul>
 					</div>
