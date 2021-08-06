@@ -11,8 +11,21 @@ $(window).scroll(function() {
 	}
 });
 
+const localidad = window.location.href;
+const palabras = localidad.split('/');
+const lenguage = palabras.indexOf('esp');
 
-var category = 'all';
+if (lenguage != -1) {
+
+	var category = 'todos';
+
+} else {
+
+	var category = 'all';
+
+}
+
+console.log(category);
 
 $(document).ready(function(){
 	var inCategory = document.getElementById('inCategory');
@@ -21,7 +34,7 @@ $(document).ready(function(){
 
 function changeCategory(categoryName){
 	hiddenAll();
-	if(categoryName == 'all'){
+	if(categoryName == 'all' || categoryName == 'todos'){
 		showAll();
 	} else {
 		showCategory(categoryName);

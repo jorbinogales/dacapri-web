@@ -17,7 +17,7 @@
 								our web site or going to any of our
 								allies establishments. You can find
 								the list of establishments that sell
-								our products <a href="dist/files/dacapri.pdf">here.</a>'
+								our products <a href="https://www.dacaprifactory.com/dist/files/dacapri.pdf">here.</a>'
 				),
 				1 => array(
 					'title' => 'How does the online <br> shop works?',

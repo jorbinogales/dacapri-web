@@ -61,8 +61,8 @@
 					'button' => 'EXPLORA NUESTROS PRODUCTOS'
 				),
 				"second" => array(
-					'title' => '"Cuando nos pruebes, no podrás<br>
-							vivir sin nosotros"',
+					'title' => '"Después que las pruebes<br>
+							no podrás vivir sin ellas"',
 				),
 				"third" => array(
 					'title' => '¿Qué nos hace diferentes',
@@ -135,7 +135,9 @@
 						<div class="text text-center">
 							<p class="transition-top"><?php echo $contentText['first']['title'] ?></p>
 							<h1 class="transition-top"><?php echo $contentText['first']['description'] ?></h1>
-							<a type="button" class="transition-bottom btn background-transparent m-auto d-block mt-5" href="https://dacaprifactory.com/">
+							<a type="button" 
+							   class="transition-bottom btn background-transparent m-auto d-block mt-5" 
+							   href="https://shop.dacaprifactory.com/">
 								<?php echo $contentText['first']['button'] ?>
 							</a>
 						</div>
