@@ -232,7 +232,7 @@
 						>
 							<?php echo $contextText['top']['subtitle'] ?>
 						</h3>
-						<a 	href="https://dacaprifactory.com/" 
+						<a 	href="https://shop.dacaprifactory.com/" 
 							class="btn background-white transition-bottom"
 						>
 							<?php echo $contextText['top']['button'] ?>
