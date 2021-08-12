@@ -115,7 +115,7 @@
 										tienda virtual, ingresando en la
 										pestaña “productos” en nuestra
 										página web o acudiendo a cualquiera de nuestros puntos de ventas aliados, 
-										la lista de establecimientos la puedes conseguir <a href="dist/files/dacapri.pdf">aqui.</a>'
+										la lista de establecimientos la puedes conseguir <a href="https://dacaprifactory.com/dist/files/dacapri.pdf">aqui.</a>'
 						),
 						1 => array(
 							'title' => '¿Cómo comprar en la <br> tienda virtual Da Capri?',
