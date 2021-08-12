@@ -11,21 +11,6 @@ $(window).scroll(function() {
 	}
 });
 
-const localidad = window.location.href;
-const palabras = localidad.split('/');
-const lenguage = palabras.indexOf('esp');
-
-if (lenguage != -1) {
-
-	var category = 'todos';
-
-} else {
-
-	var category = 'all';
-
-}
-
-console.log(category);
 
 $(document).ready(function(){
 	var inCategory = document.getElementById('inCategory');
@@ -39,7 +24,6 @@ function changeCategory(categoryName){
 	} else {
 		showCategory(categoryName);
 	}
-	nameCategory(categoryName);
 }
 
 function hiddenAll(){
@@ -54,7 +38,3 @@ function showCategory(categoryName){
 	$('.'+categoryName).fadeIn();
 }
 
-function nameCategory(categoryName){
-	$('#inCategory').contents().remove();
-	$('#inCategory').text(categoryName);
-}
