@@ -2,21 +2,41 @@
 
  function allCategory(){
 
- 	$name = [
-                'Fettuccine', 
-				'Fusilli',
-				'Baked',
-			];
-    $class = [
-            'background-green',
-            'background-red',
-            'background-black'
-    ];
+	if(isset($_GET['idiom']) && $_GET['idiom'] == 'eng'){
 
-    $return = [
-        'name' => $name,
-        'class' => $class,
-    ];
+        $name = [
+                    'Fettuccine', 
+                    'Fusilli',
+                    'Baked',
+                ];
+        $class = [
+                'background-green',
+                'background-red',
+                'background-black'
+        ];
+
+        $return = [
+            'name' => $name,
+            'class' => $class,
+        ];
+    } else { 
+        
+        $name = [
+                    'Fettuccine', 
+                    'Fusilli',
+                    'Horneada',
+                ];
+        $class = [
+                'background-green',
+                'background-red',
+                'background-black'
+        ];
+
+        $return = [
+            'name' => $name,
+            'class' => $class,
+        ];
+    }
 
 
  	return $return;
